@@ -853,6 +853,18 @@ video {
   margin-top: 5.5rem;
 }
 
+.mt-72 {
+  margin-top: 18rem;
+}
+
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
+.-mb-9 {
+  margin-bottom: -2.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1367,6 +1379,14 @@ video {
   .md\:my-\[5\.5rem\] {
     margin-top: 5.5rem;
     margin-bottom: 5.5rem;
+  }
+
+  .md\:-mb-9 {
+    margin-bottom: -2.25rem;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:flex-row {
