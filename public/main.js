@@ -14,7 +14,7 @@ if (dropMenu && clickMenu) {
 }
 
 var mySwiper = new Swiper(".mySwiper", {
-    slidesPerView: 3.5,
+    slidesPerView: 3.45,
     spaceBetween: 20,
     pagination: {
         el: ".swiper-pagination",
@@ -26,7 +26,7 @@ var mySwiper = new Swiper(".mySwiper", {
     },
     breakpoints: {
         1848: {
-            slidesPerView: 3.5,
+            slidesPerView: 3.45,
         },
         1536: {
             slidesPerView: 2.8,
