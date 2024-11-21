@@ -219,7 +219,7 @@ nav ul li:hover::after {
 }
 
 .imgItem{
-    width: 100%;
+    width: 93.5%;
     height: 100%;
     background-size: cover;
     border-radius: 0;
@@ -250,7 +250,7 @@ nav ul li:hover::after {
     position: absolute;
     top: 0;
     left: 0;
-    width: 75%;
+    width: 69%;
     height: 100%;
     background-image: url('./img/Rectangle 5387.png'); 
     background-size: cover;

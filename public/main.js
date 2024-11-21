@@ -53,7 +53,7 @@ var mySwiper = new Swiper(".mySwiper", {
     
 });
 var gridSwiper = new Swiper(".gridSwiper", {
-    slidesPerView: 5.5,
+    slidesPerView: 5.8,
     spaceBetween: 20,
     pagination: {
         el: ".swiper-pagination",
@@ -65,7 +65,7 @@ var gridSwiper = new Swiper(".gridSwiper", {
     },
     breakpoints: {
         1536: {
-            slidesPerView: 5.5,
+            slidesPerView: 5.8,
         },
         1280: {
             slidesPerView: 4.3,
