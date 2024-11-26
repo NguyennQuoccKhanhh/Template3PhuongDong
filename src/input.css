@@ -31,7 +31,7 @@
     @apply hover:text-[#0084CC] transition-all duration-300 font-normal;
 }
 .colItem{
-    @apply col-span-1 lg:col-span-3 text-center lg:text-left;
+    @apply col-span-1 lg:col-span-3 text-left;
 }
 .flexItem{
     @apply flex justify-center lg:justify-start;

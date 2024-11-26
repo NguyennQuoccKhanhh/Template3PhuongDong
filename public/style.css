@@ -467,19 +467,28 @@ input.star:hover~label.star:before {
 .rating input.star:hover ~ .rating label.star:before {
     content: "\f006";
     color: var(--color-star-hover);
-    transition: all 0.25s;}
+    transition: all 0.25s;
+}
 
 .rating input.star:checked ~ .rating label.star:before {
     content: "\f006"; 
     color: var(--color-star-checked);
-    transition: all 0.25s;}
+    transition: all 0.25s;
+}
 .img-container {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;}
+    align-items: center;
+}
 .img-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;}
+    object-fit: cover;
+}
+.flexItem img{
+    width: 96px;
+    height: 97px;
+    object-fit: cover;
+}

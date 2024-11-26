@@ -1362,13 +1362,12 @@ video {
 
 .colItem {
   grid-column: span 1 / span 1;
-  text-align: center;
+  text-align: left;
 }
 
 @media (min-width: 1024px) {
   .colItem {
     grid-column: span 3 / span 3;
-    text-align: left;
   }
 }
 
