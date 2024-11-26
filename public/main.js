@@ -1,14 +1,15 @@
-
+// import { defaultSwiperConfig, gridSwiperConfig } from './swiperConfig'
 const dropMenu = document.getElementById('dropMenu');
 const clickMenu = document.getElementById('clickMenu');
 
 if (dropMenu && clickMenu) {
+    clickMenu.addEventListener('click', (e) => {
+        dropMenu.classList.toggle('active');
+    });
+
     document.addEventListener('click', (e) => {
-        if (clickMenu.contains(e.target)) {
-            // dropMenu.classList.toggle('hidden');
-            dropMenu.classList.toggle('active');
-        } else if (!dropMenu.contains(e.target)) {
-            dropMenu.classList.add('hidden');
+        if (!dropMenu.contains(e.target) && !clickMenu.contains(e.target)) {
+            dropMenu.classList.remove('active');
         }
     });
 }

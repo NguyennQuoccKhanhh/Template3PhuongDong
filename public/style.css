@@ -74,6 +74,21 @@ nav ul li:hover::after {
 }
 
 
+.Circle-img1 {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 24rem; /* 96 = 24rem */
+    z-index: -10;
+  }
+  
+  @media (min-width: 1024px) {
+    .Circle-img1 {
+      display: block;
+    }
+  }
+  
+
 .swiper {
     position:relative;
     width: 100%;
@@ -86,7 +101,7 @@ nav ul li:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     border-radius: 8px;
     box-sizing: border-box;
 }
@@ -140,7 +155,7 @@ nav ul li:hover::after {
 
 
   /* Ảnh nền */
-.bgImage {
+.imageMySwiper {
     position: absolute;
     top: 0;
     left: 0;
@@ -188,19 +203,60 @@ nav ul li:hover::after {
     -webkit-text-fill-color: white;
 }
 
-.btn{
+
+.gradient-button {
+    position: relative;
     margin-top: 16px;
-    padding: 13px 73.5px 13px 73.5px;
-    border: 1px solid #FFB469;
-    color: #FFB469;
+    padding: 13px 73.5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+  
+.gradient-button span {
+    position: relative;
+    z-index: 10;
+    background: linear-gradient(180deg, #FFB469 0%, #E57709 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
+.gradient-button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: 9999px;
+    background: linear-gradient(180deg, #FFB469 0%, #E57709 100%);
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gradient-button::after {
+    content: '';
+    position: absolute;
+    border-radius: 9999px;
+    inset: 0;
+    background: linear-gradient(180deg, #FFB469 0%, #E57709 100%);
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
+.content-overlay:hover .gradient-button::after {
+    opacity: 1;
+}
+  
+.content-overlay:hover .gradient-button span {
+    background: none;
+    -webkit-text-fill-color: white;
 }
 
-.content-overlay:hover .btn{
-    border: none ;
-    background: linear-gradient(135deg, #FFB469 0%, #E57709 100%);
-    color: white;
-    transition: all 0.3s ease-in-out;
-}
 .textP1{
     color: #252525;
     margin-bottom: 8px;
@@ -209,13 +265,8 @@ nav ul li:hover::after {
     color: white;
     transition: all 0.3s ease-in-out;
 }
-.textP2{
-    color: #000000;
-    opacity: 0.65;
-}
-.content-overlay:hover .textP2{
+.content-overlay:hover .textContent {
     color: white;
-    transition: all 0.3s ease-in-out;
 }
 
 .imgItem{
@@ -236,10 +287,11 @@ nav ul li:hover::after {
     background-clip: text;
     color: transparent;
 }
-.bgSectionHD{
+.bgSectionTable{
     background: linear-gradient(135deg, #50C577 10%, #C4EACE 40%, #BEE8FD 50%);
+    z-index: 1;
 }
-.bgSectionFT{
+.bgSectionFooterTable{
     background: linear-gradient(135deg, #50C577 0%, #2DBEFC 100%);
     border-radius: 0;
     border-bottom-left-radius: 20px;
@@ -252,7 +304,7 @@ nav ul li:hover::after {
     left: 0;
     width: 69%;
     height: 100%;
-    background-image: url('./img/Rectangle 5387.png'); 
+    background-image: url('./img/Me_be.png'); 
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -261,8 +313,8 @@ nav ul li:hover::after {
 .bgSectionText {
     position: absolute;
     right: 0;
-    width: 35%;
-    height: 75%;
+    width: 45.5%;
+    height: 65%;
     background: #FFFFFF;
     z-index: 2;
     padding-top: 56px;
@@ -347,3 +399,87 @@ nav ul li:hover::after {
 .bgFooter{
     background: linear-gradient(135deg, #1CAB55 0%, #04A4EC 100%);
 }
+
+
+:root {
+    --color-star-check-full: #FFC700;
+    --color-star-hover: #FFC700;
+    --color-star-checked: #FFC700;
+    --color-star-evalue: #979797;
+}
+
+div.rating-select .rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+div.rating-select {
+    display: flex;
+}
+
+div.stars {
+    display: inline-block;
+}
+
+input.star {
+    display: none;
+}
+
+label.star {
+    margin-right: 2px;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+
+label.star:before {
+    color: var(--color-star-evalue);
+    content: "\f006";
+    font-family: "FontAwesome";
+    font-size: var(--font-size-select, 1rem)
+}
+
+input.star:checked~label.star:before {
+    content: "\f006";
+    color: var(--color-star-checked);
+    transition: all 0.25s;
+}
+
+input.star-5:checked~label.star:before {
+    content: "\f005";
+    color: var(--color-star-check-full);
+    text-shadow: 0.1px 0.1px 4px var(--color-star-check-full);
+}
+
+label.star:hover {
+    transform: rotate(-5deg) scale(1.1);
+    color: var(--color-star-hover);
+}
+
+input.star:hover~label.star:before {
+    content: "\f006";
+    color: var(--color-star-hover);
+    transition: all 0.25s;
+}
+.rating {
+    position: relative;
+    isolation: isolate;}
+.rating input.star:hover ~ .rating label.star:before {
+    content: "\f006";
+    color: var(--color-star-hover);
+    transition: all 0.25s;}
+
+.rating input.star:checked ~ .rating label.star:before {
+    content: "\f006"; 
+    color: var(--color-star-checked);
+    transition: all 0.25s;}
+.img-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;}

@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'Roboto':['Roboto','sans-serif'],
-        'Arima': ['Arima Madurai', 'cursive'],
+        'Arima': ['Arima', 'system-ui'],
       }
     },
   },
