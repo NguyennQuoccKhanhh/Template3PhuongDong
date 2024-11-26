@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 .btnCss {
-    @apply font-semibold text-white rounded-full bg-gradient-to-r from-[#FFB469] to-[#E57709] shadow-sm hover:shadow-[#FFB469] hover:shadow-md transition-all duration-300;
+    @apply font-semibold text-white rounded-full bg-gradient-to-b from-[#FFB469] to-[#E57709] shadow-sm hover:shadow-[#FFB469] hover:shadow-md transition-all duration-300;
 }
 .btnCss2 {
-    @apply font-semibold bg-gradient-to-r from-[#FFB469] to-[#E57709] text-[#FFFFFF] shadow-md shadow-[#FFB469] hover:shadow-xl transition-all duration-300 rounded-full px-8 py-[0.8125rem];
+    @apply font-semibold bg-gradient-to-b from-[#FFB469] to-[#E57709] text-[#FFFFFF] shadow-md shadow-[#FFB469] hover:shadow-xl transition-all duration-300 rounded-full px-8 py-[0.8125rem];
 }
 
 .btnDocter{
-    @apply w-10 h-10 shadow-md shadow-[#FFB469] bg-gradient-to-r from-[#FFB469] to-[#E57709] text-[#FFFFFF] hover:shadow rounded-full text-base md:text-[1.625rem] transition-all duration-300 ease-in-out;
+    @apply w-10 h-10 shadow-md shadow-[#FFB469] bg-gradient-to-b from-[#FFB469] to-[#E57709] text-[#FFFFFF] hover:shadow rounded-full text-base md:text-[1.625rem] transition-all duration-300 ease-in-out;
 }
 
 .textContent{
@@ -22,6 +22,18 @@
 
 .lineHeight{
     @apply  leading-tight lg:leading-normal;
+}
+.lineHeight1{
+    @apply  leading-8;
+}
+.lineHeight2{
+    @apply  leading-[2.75rem];
+}
+.lineHeight3{
+    @apply  leading-7;
+}
+.lineHeight4{
+    @apply  leading-5;
 }
 .textFooterTable{
     @apply flex items-center font-semibold text-sm text-white;

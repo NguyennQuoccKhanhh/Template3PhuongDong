@@ -320,8 +320,9 @@ nav ul li:hover::after {
     padding-top: 56px;
     padding-bottom: 56px;
     border-radius: 0;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
     top: 50%;
     transform: translateY(-50%);
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
