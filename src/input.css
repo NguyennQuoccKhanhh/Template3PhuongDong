@@ -48,3 +48,7 @@
 .fontMduText22{
     @apply font-medium text-[1.375rem];
 }
+
+.itemCrilce{
+    @apply hidden md:block absolute -top-1 left-6 w-6 h-6 -translate-x-8 rounded-full bg-gradient-to-r from-[#50C577] text-[#C4EACE] to-[#B5E8FD] -z-10;
+}
