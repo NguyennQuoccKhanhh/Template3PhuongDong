@@ -1,12 +1,25 @@
 .container {
     margin:0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0px;
+    padding-right: 0px;
     width: 100%;
+}
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 body{
     max-width: 1920px;
     margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+@media (min-width: 1024px) {
+    body {
+        font-size: 1rem;
+    }
 }
 
 nav ul {
@@ -74,19 +87,26 @@ nav ul li:hover::after {
 }
 
 
-.Circle-img1 {
+.circleImg1 {
     display: none;
     position: absolute;
     top: 50%;
-    left: 24rem; /* 96 = 24rem */
-    z-index: -10;
-  }
-  
-  @media (min-width: 1024px) {
-    .Circle-img1 {
+    left: 21rem;
+    z-index: -20;
+}
+
+.circleImg1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+    .circleImg1{
       display: block;
     }
-  }
+}
+
   
 
 .swiper {
@@ -117,6 +137,19 @@ nav ul li:hover::after {
 }
 
 
+/* .bannerSwiper .swiper-slide {
+    height: 650px;
+    border-radius: 0;
+} */
+
+.bannerSwiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+
 .mySwiper .swiper-slide {
     height: 450px;
     border-radius: 0;
@@ -135,7 +168,7 @@ nav ul li:hover::after {
 
 
 .gridSwiper .swiper-slide {
-    height: 450px;
+    height: 460px;
     border-radius: 0;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -169,7 +202,7 @@ nav ul li:hover::after {
 }
 
   /* Khối nội dung */
-.content-overlay {
+.contentOverlay {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -185,7 +218,7 @@ nav ul li:hover::after {
 }
 
 
-.content-overlay:hover{
+.contentOverlay:hover{
     background: linear-gradient(135deg, #50C577 0%, #2DBEFC 100%);
     transition: all 0.3s ease-in-out;
 }
@@ -199,12 +232,12 @@ nav ul li:hover::after {
     transition: color 0.3s ease;
 }
 
-.content-overlay:hover .textColor{
+.contentOverlay:hover .textColor{
     -webkit-text-fill-color: white;
 }
 
 
-.gradient-button {
+.gradientButton {
     position: relative;
     margin-top: 16px;
     padding: 13px 73.5px;
@@ -214,7 +247,7 @@ nav ul li:hover::after {
     overflow: hidden;
 }
   
-.gradient-button span {
+.gradientButton span {
     position: relative;
     z-index: 10;
     background: linear-gradient(180deg, #FFB469 0%, #E57709 100%);
@@ -224,7 +257,7 @@ nav ul li:hover::after {
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
   
-.gradient-button::before {
+.gradientButton::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -238,7 +271,7 @@ nav ul li:hover::after {
     mask-composite: exclude;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.gradient-button::after {
+.gradientButton::after {
     content: '';
     position: absolute;
     border-radius: 9999px;
@@ -248,11 +281,11 @@ nav ul li:hover::after {
     transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
   
-.content-overlay:hover .gradient-button::after {
+.contentOverlay:hover .gradientButton::after {
     opacity: 1;
 }
   
-.content-overlay:hover .gradient-button span {
+.contentOverlay:hover .gradientButton span {
     background: none;
     -webkit-text-fill-color: white;
 }
@@ -261,11 +294,10 @@ nav ul li:hover::after {
     color: #252525;
     margin-bottom: 8px;
 }
-.content-overlay:hover .textP1{
+.contentOverlay:hover .textP1{
     color: white;
-    transition: all 0.3s ease-in-out;
 }
-.content-overlay:hover .textContent {
+.contentOverlay:hover .textContent {
     color: white;
 }
 
@@ -280,9 +312,9 @@ nav ul li:hover::after {
 }
 
 
-.text-gradient {
+.textGradient {
     font-size: 1.2em;
-    background-image: linear-gradient(to right, #73D090, #C4EACE, #53CAFB);
+    background: linear-gradient(to right, #73D090, #C4EACE 10%,#53CAFB 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -324,6 +356,7 @@ nav ul li:hover::after {
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
     top: 50%;
+    right: -4.5%;
     transform: translateY(-50%);
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
@@ -371,7 +404,7 @@ nav ul li:hover::after {
     }
 }
 
-.circle-wrapper {
+/* .circle-wrapper {
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -394,7 +427,7 @@ nav ul li:hover::after {
     height: auto;
     object-fit: cover;
     
-}
+} */
 
 
 .bgFooter{
@@ -476,14 +509,14 @@ input.star:hover~label.star:before {
     color: var(--color-star-checked);
     transition: all 0.25s;
 }
-.img-container {
+.imgContainer {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.img-container img {
+.imgContainer img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -493,3 +526,31 @@ input.star:hover~label.star:before {
     height: 97px;
     object-fit: cover;
 }
+
+
+.registerForm {
+    text-align: center;
+    background: linear-gradient(180deg, #1881EC 0%, #0558A6 100%);
+    max-width: 28rem;
+    width: 100%;
+    height: fit-content;
+    border-radius: 0.75rem;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    z-index: 40;
+    pointer-events: auto;
+    transition: all 0.3s ease-in-out;
+}
+  
+@media (min-width: 1408px) {
+    .registerForm {
+      position: absolute;
+      left: auto;
+      right: 19rem;
+      top: 28rem;
+      transform: translate(0, 0);
+    }
+}
+  

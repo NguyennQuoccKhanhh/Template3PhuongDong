@@ -27,831 +27,882 @@
 </head>
 
 <body>
-    <div class="font-Roboto text-base">
-        <section class="relative">
-            <header
-                class="container mx-auto py-3 flex justify-between items-center lg:relative fixed top-0 left-0 right-0 z-50">
-                <a href="./index.html" class="">
-                    <img src="./public/img/Logoheader.png" alt="Logoheader">
-                </a>
-                <nav id="dropMenu" class="hidden lg:block">
-                    <ul class="font-medium text-[1.125rem] grid grid-flow-col gap-4 xl:gap-8 text-lg">
-                        <li>
-                            <a href="#">Ưu đãi</a>
-                        </li>
-                        <li><a href="#">Dịch vụ</a></li>
-                        <li><a href="#">Giới thiệu</a></li>
-                        <li><a href="#">Đội ngũ bác sĩ</a></li>
-                        <li><a href="#">Bảng giá</a></li>
-                        <li><a href="#">Thư viện</a></li>
-                        <li><a href="#">Liên hệ</a></li>
-                    </ul>
-                </nav>
-                <a href="tel:19001806" class="btnCss hidden lg:block text-sm py-2.5 pl-4 pr-6">
-                    <i class="fa-solid fa-phone-volume pr-2"></i>
-                    Hotline: 1900 1806
-                </a>
-                <div class="lg:hidden">
-                    <i id="clickMenu" class="fa-solid fa-bars"></i>
-                </div>
-            </header>
-            <div class="hidden lg:block bg-no-repeat bg-cover ">
-                <img src="./public/img/Banner.png" alt="Banner">
+    <section>
+        <header
+            class="container mx-auto py-3 flex justify-between items-center fixed top-0 left-0 right-0 z-50 bg-white w-full">
+            <a href="./index.html">
+                <img src="./public/img/Logoheader.png" alt="Logoheader">
+            </a>
+            <nav id="dropMenu" class="hidden lg:block">
+                <ul class="font-medium text-18 grid grid-flow-col gap-4 xl:gap-8 text-lg">
+                    <li>
+                        <a href="#">Ưu đãi</a>
+                    </li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Đội ngũ bác sĩ</a></li>
+                    <li><a href="#">Bảng giá</a></li>
+                    <li><a href="#">Thư viện</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <a href="tel:19001806" class="btnCss hidden lg:block text-sm py-2.5 pl-4 pr-6">
+                <i class="fa-solid fa-phone-volume pr-2"></i>
+                Hotline: 1900 1806
+            </a>
+            <div class="lg:hidden">
+                <i id="clickMenu" class="fa-solid fa-bars"></i>
             </div>
-            <div class="Circle-img1">
-                <img src="./public/img/Circle1.png" alt="Circle1">
-            </div>
-        </section>
-        <section class="grid xl:grid-cols-12 my-[4rem] 2xl:my-[5.5rem]">
-            <div class="col-start-2 col-span-12 grid grid-cols-12">
-                <div class="col-span-12 lg:col-span-3 mr-0 lg:mr-8">
-                    <p class="font-medium text-4xl mb-4 lg:text-start text-center lineHeight2 lg:pl-2">Chương trình ưu đãi:</p>
-                    <p class="textContent lineHeight lg:text-start text-center lg:pl-2">Lorem ipsum dolor
-                        sit amet, consectetur
-                        adipiscing elit lis iaculis ac felis porta. Vulputate
-                        tellus sapien pat sit ipsum molestie pharetran da volutpat semper.</p>
-                    <div class="flex justify-center gap-4 mt-8 lg:mt-[3.5rem] lg:justify-start mb-6 lg:pl-2">
-                        <button class="btnDocter docterPrev">
-                            <i class="fa-solid fa-angle-left"></i>
-                        </button>
-                        <button class="btnDocter docterNext">
-                            <i class="fa-solid fa-angle-right"></i>
-                        </button>
-                    </div>
+        </header>
+    </section>
+    <section class=" mt-16 relative ">
+        <div class="swiper bannerSwiper -z-10 pointer-events-auto">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./public/img/Banner.png" alt="Banner">
                 </div>
-                <div class="col-span-12 lg:col-span-9 ">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper pb-1">
-                            <div class="swiper-slide relative">
-                                <div class="imageMySwiper"></div>
-                                <div class="w-5/6 content-overlay shadow-lg hover:shadow">
-                                    <p class="font-medium text-[2rem] font-Arima mb-2 textColor lineHeight1">Ưu đãi 50%</p>
-                                    <p class="fontMduText22 textP1 lineHeight3">Gói khám thai tổng quát</p>
-                                    <p class="text-base textContent mx-4 lineHeight">Lorem ipsum dolor sit amet tarancebe
-                                        consectetur
-                                        adipiscing elit turpis.</p>
-                                    <button class="gradient-button hover:shadow-md rounded-full text-base">
-                                        <span>Đăng ký nhận ưu đãi</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="swiper-slide relative pb-1">
-                                <div class="imageMySwiper"></div>
-                                <div class="content-overlay shadow-lg hover:shadow">
-                                    <p class="font-medium text-[2rem] font-Arima mb-2 textColor lineHeight1">Ưu đãi 50%</p>
-                                    <p class="fontMduText22 textP1 lineHeight3">Gói khám thai tổng quát</p>
-                                    <p class="text-base textContent mx-4 lineHeight">Lorem ipsum dolor sit amet tarancebe
-                                        consectetur
-                                        adipiscing elit turpis.</p>
-                                    <button class="gradient-button hover:shadow-md rounded-full text-base">
-                                        <span>Đăng ký nhận ưu đãi</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="swiper-slide relative pb-1">
-                                <div class="imageMySwiper"></div>
-                                <div class="content-overlay shadow-lg hover:shadow">
-                                    <p class="font-medium text-[2rem] font-Arima mb-2 textColor lineHeight1">Ưu đãi 50%</p>
-                                    <p class="fontMduText22 textP1 lineHeight3">Gói khám thai tổng quát</p>
-                                    <p class="text-base textContent mx-4 lineHeight">Lorem ipsum dolor sit amet tarancebe
-                                        consectetur
-                                        adipiscing elit turpis.</p>
-                                    <button class="gradient-button hover:shadow-md rounded-full text-base">
-                                        <span>Đăng ký nhận ưu đãi</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="swiper-slide relative pb-1">
-                                <div class="imageMySwiper"></div>
-                                <div class="content-overlay shadow-lg hover:shadow">
-                                    <p class="font-medium text-[2rem] font-Arima mb-2 textColor lineHeight1">Ưu đãi 50%</p>
-                                    <p class="fontMduText22 textP1 lineHeight3">Gói khám thai tổng quát</p>
-                                    <p class="text-base textContent mx-4 lineHeight">Lorem ipsum dolor sit amet tarancebe
-                                        consectetur
-                                        adipiscing elit turpis.</p>
-                                    <button class="gradient-button hover:shadow-md rounded-full text-base">
-                                        <span>Đăng ký nhận ưu đãi</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="swiper-slide relative pb-1">
-                                <div class="imageMySwiper"></div>
-                                <div class="content-overlay  shadow-lg hover:shadow">
-                                    <p class="font-medium text-[2rem] font-Arima mb-2 textColor lineHeight1">Ưu đãi 50%</p>
-                                    <p class="fontMduText22 textP1 lineHeight3">Gói khám thai tổng quát</p>
-                                    <p class="text-base textContent mx-4 lineHeight">Lorem ipsum dolor sit amet tarancebe
-                                        consectetur
-                                        adipiscing elit turpis.</p>
-                                    <button class="gradient-button hover:shadow-md rounded-full text-base">
-                                        <span>Đăng ký nhận ưu đãi</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="swiper-slide">
+                    <img src="./public/img/Banner.png" alt="Banner">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/img/Banner.png" alt="Banner">
                 </div>
             </div>
-        </section>
-        <section>
-            <div class="container mx-auto flex lg:justify-between items-center lg:text-left text-center relative">
-                <div class="hidden lg:block basis-1/2 imgItem mr-8">
-                    <img src="./public/img/imgDVTS.png" class="" alt="imgDVTS">
+        </div>
+        <div class="registerForm">
+            <form action="">
+                <p class="font-medium text-base lg:text-lg text-white uppercase py-1 text-shadow">Đăng ký nhận ưu đãi
+                </p>
+                <div class=" flex flex-col justify-center md:flex-row md:justify-around items-center">
+                    <input type="text" class="bg-white rounded-xl py-1 lg:py-2 pl-5 placeholder:text-black25 x"
+                        placeholder="Số điện thoại (*)">
+                    <button type="submit"
+                        class="px-5 py-1 lg:px-11 lg:py-6px font-bold text-base lg:text-xl rounded-2xl bg-yellowFFD uppercase text-blu055 hover:bg-white transition-all duration-300 ease-in-out mt-3 md:mt-0 "
+                        aria-label="Đăng ký để nhận tư vấn">Hoàn tất</button>
                 </div>
-                <div class="lg:basis-1/2 flex flex-col items-center lg:items-start">
-                    <p class="font-medium text-4xl mb-4 lineHeight2">Dịch vụ thai sản trọn gói
-                    </p>
-                    <p class="textContent mb-4 lineHeight">Mang thai và sinh nở là một hành trình vô
-                        cùng
-                        kỳ diệu nhưng cũng lắm mệt mỏi, áp lực, thậm chí
-                        là nguy hiểm. Thấu hiểu nỗi niềm đó, dịch vụ thai sản trọn gói Phương Đông nhằm mang tới trải
-                        nghiệm nhẹ nhàng, an tâm cho người mẹ trong suốt thai kỳ, ngày vượt cạn đến sau sinh và sự chăm
-                        sóc toàn diện với em bé ngay từ giây phút đầu tiên chào đời.</p>
-
-                    <div class="grid gap-4">
-                        <div class="benefit-item">
-                            <div class="flex flex-col gap-2 lineHeight">
-                                <p class="flex items-center justify-center lg:justify-start">
-                                    <span class="text-gradient mr-3 text-xs">●</span>
-                                    <span class="font-medium">Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</span>
-                                </p>
-                                <p class="flex items-center justify-center lg:justify-start ml-4">
-                                    <span class="text-gradient mr-3 text-xs">●</span>
-                                    <span class="font-medium">Chăm sóc mẹ và bé toàn diện trước trong và sau sinh</span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="benefit-item">
-                            <div class="flex flex-col gap-2 lineHeight">
-                                <p class="flex items-center justify-center lg:justify-start">
-                                    <span class="text-gradient mr-3 text-xs">●</span>
-                                    <span class="font-medium">Không gian đẳng cấp với trang thiết bị y tế hiện
-                                        đại</span>
-                                </p>
-                                <p class="flex items-center justify-center lg:justify-start ml-4">
-                                    <span class="text-gradient mr-3 text-xs">●</span>
-                                    <span class="font-medium">Đi sinh sung sướng như đi nghỉ dưỡng</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="benefit-item">
-                            <div class="flex flex-col gap-2 lineHeight">
-                                <p class="flex items-center justify-center lg:justify-start">
-                                    <span class="text-gradient mr-3 text-xs">●</span>
-                                    <span class="font-medium">Con yêu chào đời với những điều kiện tốt nhất</span>
-                                </p>
-                                <p class="flex items-center justify-center lg:justify-start ml-4">
-                                    <span class="text-gradient mr-3 text-xs">●</span>
-                                    <span class="font-medium">Thanh toán đồng thời bảo hiểm Y tế, bảo hiểm bảo
-                                        lãnh</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="benefit-item">
-                            <div class="flex flex-col gap-2 lineHeight">
-                                <p class="flex items-center justify-center lg:justify-start">
-                                    <span class="text-gradient mr-3 text-xs">●</span>
-                                    <span class="font-medium">Bảng giá các gói sinh tại Bệnh viện Phương Đông</span>
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <button class="px-8 py-[0.8125rem] btnCss2 mt-10">
-                        Liên hệ
-                    </button>
-                </div>
-                <div class="hidden lg:block absolute -left-[15%] -bottom-3/4 -z-10">
-                    <img src="./public/img/Circle2.png" alt="Circle2">
-                </div>
-            </div>
-        </section>
-        <section class="bgSectionTable mt-[5.5rem] py-20 relative overflow-visible">
-            <div class="container mx-auto flex flex-col justify-center items-center bg-white px-6 pt-8">
-                <div class="w-[98%]">
-                    <div class="flex flex-col md:flex-row items-center py-4 mt-[0.625rem] ">
-                        <img src="./public/img/Logoheader.png" class="" alt="Logoheader">
-                        <div class="flex-1 text-center">
-                            <p class="font-medium text-4xl mb-[0.625rem] mt-5 md:mt-0 lineHeight2">Bảng giá các dịch vụ khám và chữa
-                                bệnh:</p>
-                            <p class="textContent lineHeight">Ghi chú: Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit lis
-                                iaculis ac felis</p>
-                        </div>
-                    </div>
-                    <div class="rounded-lg overflow-hidden overflow-x-auto mb-8">
-                        <table
-                            class="min-w-full border border-gray-200 bg-white [&_td]:border [&_th]:border [&_tr]:border ">
-                            <thead class="bg-gradient-to-r from-[#50C557] to-[#2DBEFC] font-medium">
-                                <tr>
-                                    <th rowspan="2" class="py-2 px-4 text-white uppercase text-center">
-                                        STT</th>
-                                    <th rowspan="2" class="py-2 px-4 text-white uppercase text-center">
-                                        Tên dịch vụ</th>
-                                    <th colspan="2" class="py-2 px-4  text-white uppercase text-center">
-                                        Giá dịch vụ cho khách hàng có quốc tịch</th>
-                                </tr>
-                                <tr>
-                                    <th class="py-2 px-4 text-white text-center">Việt Nam</th>
-                                    <th class="py-2 px-4 text-white text-center">Nước ngoài
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody class="textContent ">
-                                <tr class="border-t border-gray-200">
-                                    <td class="py-3 px-4 text-center">1</td>
-                                    <td class="py-3 px-4">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td>
-                                    <td class="py-3 px-4 text-center">200,000/giờ</td>
-                                    <td class="py-3 px-4 text-center">400,000/giờ</td>
-                                </tr>
-                                <tr class="border-t border-gray-200 ">
-                                    <td class="py-3 px-4 text-center">2</td>
-                                    <td class="py-3 px-4">Cắt chỉ</td>
-                                    <td class="py-3 px-4 text-center">300,000/lần</td>
-                                    <td class="py-3 px-4 text-center">300,000/lần</td>
-                                </tr>
-                                <tr class="border-t border-gray-200">
-                                    <td class="py-3 px-4 text-center">3</td>
-                                    <td class="py-3 px-4">Phương tiện bảo hộ lấy mẫu</td>
-                                    <td class="py-3 px-4 text-center">300,000/lần</td>
-                                    <td class="py-3 px-4 text-center">300,000/lần</td>
-                                </tr>
-                                <tr class="border-t border-gray-200 ">
-                                    <td class="py-3 px-4 text-center">4</td>
-                                    <td class="py-3 px-4">Tắm bé tại nhà</td>
-                                    <td class="py-3 px-4 text-center">300,000/lần</td>
-                                    <td class="py-3 px-4 text-center">300,000/lần</td>
-                                </tr>
-                                <tr class="border-t border-gray-200 ">
-                                    <td class="py-3 px-4 text-center">5</td>
-                                    <td class="py-3 px-4">Dẫn lưu nước tiểu bàng quang</td>
-                                    <td class="py-3 px-4 text-center">300,000/lần</td>
-                                    <td class="py-3 px-4 text-center">300,000/lần</td>
-                                </tr>
-                                <tr class="border-t border-gray-200 ">
-                                    <td class="py-3 px-4 text-center">6</td>
-                                    <td class="py-3 px-4">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td>
-                                    <td class="py-3 px-4 text-center">200,000/lần</td>
-                                    <td class="py-3 px-4 text-center">400,000/lần</td>
-                                </tr>
-                                <tr class="border-t border-gray-200 ">
-                                    <td class="py-3 px-4 text-center">7</td>
-                                    <td class="py-3 px-4">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td>
-                                    <td class="py-3 px-4 text-center">200,000/lần</td>
-                                    <td class="py-3 px-4 text-center">400,000/lần</td>
-                                </tr>
-                                <tr class="border-t border-gray-200 ">
-                                    <td class="py-3 px-4 text-center">8</td>
-                                    <td class="py-3 px-4">Xét nghiệm tại nhà</td>
-                                    <td colspan="2" class="py-3 px-4 text-center">Theo giá niêm yết
-                                        tại BVDK Phương Đông</td>
-                                </tr>
-                                <tr class="border-t border-gray-200 ">
-                                    <td class="py-3 px-4 text-center">9</td>
-                                    <td class="py-3 px-4">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td>
-                                    <td class="py-3 px-4 text-center">200,000/lần</td>
-                                    <td class="py-3 px-4 text-center">400,000/lần</td>
-                                </tr>
-                                <tr class="border-t border-gray-200 ">
-                                    <td class="py-3 px-4 text-center">10</td>
-                                    <td class="py-3 px-4">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td>
-                                    <td class="py-3 px-4 text-center">200,000/lần</td>
-                                    <td class="py-3 px-4 text-center">400,000/lần</td>
-                                </tr>
-                                <tr class="border-t border-gray-200 ">
-                                    <td class="py-3 px-4 text-center">11</td>
-                                    <td class="py-3 px-4">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td>
-                                    <td class="py-3 px-4 text-center">200,000/lần</td>
-                                    <td class="py-3 px-4 text-center">400,000/lần</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="container mx-auto bgSectionFooterTable flex flex-col md:flex-row justify-around items-center py-2">
-                <a href="tel:19001806">
-                    <div class="textFooterTable">
-                        <i class="fa-solid fa-phone-volume mr-2"></i>
-                        <p>Hotline: 1900 1806</p>
-                    </div>
-                </a>
-                <a href="https://benhvienphuongdong.vn/">
-                    <div class="textFooterTable">
-                        <i class="fa-solid fa-globe mr-2"></i>
-                        <p>https://benhvienphuongdong.vn/</p>
-                    </div>
-                </a>
-            </div>
-            <div class="hidden lg:block absolute right-0 -bottom-52 -z-10">
-                <img src="./public/img/Circle3.png" alt="Circle3">
-            </div>
-        </section>
-        <section class="mt-4 xl:mt-[5.5rem] grid xl:grid-cols-12 relative">
-            <div class="col-start-1 col-span-10 h-[583px] relative">
-                <div class="bgSectionImg"></div>
-                <div class="bgSectionText p-14">
-                    <p class="font-medium text-4xl mb-4 lineHeight2">Bệnh viên Phương Đông tiên phong
-                        trong dịch vụ thai sản trọn gói</p>
-                    <p
-                        class="font-normal  text-white xl:text-[#000000] xl:text-opacity-65 lineHeight">
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Suspendisse tale tincidunt tortor
-                        lobortis pretium nulla quis sem nullam rhoncus. Ornare et dui sit massa. Volutpat porta leo
-                        pulvinar adipiscing gestas metus </p>
-                    <button class="px-8 py-[0.8125rem] btnCss2 mt-10">
-                        Đăng ký tư vấn
-                    </button>
-                </div>
-            </div>
-            <div class="hidden lg:block absolute left-[45%] top-1/2">
-                <img src="./public/img/Circle4.png" alt="Circle4">
-            </div>
-        </section>
-        <section class="mt-0 lg:mt-72">
-            <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center py-10">
-                <p class="font-medium text-4xl text-center mb-4 lg:mb-0 lineHeight2">Hình ảnh về
-                    cơ sở vật chất, trang thiết bị</p>
-                <div class="flex gap-4">
-                    <button class="docterPrev1 btnDocter">
+                <p class="font-normal text-sm text-white mt-3 italic">(*)Cam kết bảo mật thông tin!</p>
+            </form>
+        </div>
+        <div class="circleImg1">
+            <img src="./public/img/Circle1.png" alt="Circle1">
+        </div>
+    </section>
+    <section class="flex flex-col lg:flex-row justify-end my-12 2xl:my-88">
+        <div class="w-full xl:w-[87%] flex flex-col lg:flex-row">
+            <div class="w-full lg:w-[30%] mr-0 lg:mr-8">
+                <p class="font-medium text4xl mb-4 lg:text-start text-center leading-44 lg:pl-2">
+                    Chương trình ưu
+                    đãi:</p>
+                <p class="textContent leading-normal lg:text-start text-center lg:pl-2">Lorem ipsum dolor
+                    sit amet, consectetur
+                    adipiscing elit lis iaculis ac felis porta. Vulputate
+                    tellus sapien pat sit ipsum molestie pharetran da volutpat semper.</p>
+                <div class="flex justify-center gap-4 mt-8 lg:mt-14 lg:justify-start mb-6 lg:pl-2">
+                    <button class="btnDocter docterPrev" aria-label="Bấm chuyển slide ">
                         <i class="fa-solid fa-angle-left"></i>
                     </button>
-                    <button class="docterNext1 btnDocter">
+                    <button class="btnDocter docterNext" aria-label="Bấm chuyển slide ">
                         <i class="fa-solid fa-angle-right"></i>
                     </button>
                 </div>
             </div>
-            <div class="swiper gridSwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./public/img/Robot1.png" alt="Robot">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./public/img/Robot2.png" alt="Robot">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./public/img/Robot3.png" alt="Robot">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./public/img/Robot4.png" alt="Robot">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./public/img/Robot5.png" alt="Robot">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./public/img/Robot6.png" alt="Robot">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./public/img/Robot1.png" alt="Robot">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./public/img/Robot1.png" alt="Robot">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./public/img/Robot1.png" alt="Robot">
+            <div class="w-full lg:w-[70%]">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper pb-1">
+                        <div class="swiper-slide relative">
+                            <div class="imageMySwiper"></div>
+                            <div class="w-5/6 contentOverlay shadow-lg hover:shadow">
+                                <p class="font-medium text2rem font-Arima mb-2 textColor leading-8">Ưu đãi 50%
+                                </p>
+                                <p class="fontMduText22 textP1 leading-7">Gói khám thai tổng quát</p>
+                                <p class="text-base textContent mx-4 leading-normal">Lorem ipsum dolor sit amet
+                                    tarancebe
+                                    consectetur
+                                    adipiscing elit turpis.</p>
+                                <button class="gradientButton hover:shadow-md rounded-full text-base"
+                                    aria-label="Đăng ký dịch vụ">
+                                    <span>Đăng ký nhận ưu đãi</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide relative pb-1">
+                            <div class="imageMySwiper"></div>
+                            <div class="contentOverlay shadow-lg hover:shadow">
+                                <p class="font-medium text2rem font-Arima mb-2 textColor leading-8">Ưu đãi 50%
+                                </p>
+                                <p class="fontMduText22 textP1 leading-7">Gói khám thai tổng quát</p>
+                                <p class="text-base textContent mx-4 leading-normal">Lorem ipsum dolor sit amet
+                                    tarancebe
+                                    consectetur
+                                    adipiscing elit turpis.</p>
+                                <button class="gradientButton hover:shadow-md rounded-full text-base"
+                                    aria-label="Đăng ký dịch vụ">
+                                    <span>Đăng ký nhận ưu đãi</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide relative pb-1">
+                            <div class="imageMySwiper"></div>
+                            <div class="contentOverlay shadow-lg hover:shadow">
+                                <p class="font-medium text2rem font-Arima mb-2 textColor leading-8">Ưu đãi 50%
+                                </p>
+                                <p class="fontMduText22 textP1 leading-7">Gói khám thai tổng quát</p>
+                                <p class="text-base textContent mx-4 leading-normal">Lorem ipsum dolor sit amet
+                                    tarancebe
+                                    consectetur
+                                    adipiscing elit turpis.</p>
+                                <button class="gradientButton hover:shadow-md rounded-full text-base"
+                                    aria-label="Liên hệ tư vấn dịch vụ">
+                                    <span>Đăng ký nhận ưu đãi</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide relative pb-1">
+                            <div class="imageMySwiper"></div>
+                            <div class="contentOverlay shadow-lg hover:shadow">
+                                <p class="font-medium text2rem font-Arima mb-2 textColor leading-8">Ưu đãi 50%
+                                </p>
+                                <p class="fontMduText22 textP1 leading-7">Gói khám thai tổng quát</p>
+                                <p class="text-base textContent mx-4 leading-normal">Lorem ipsum dolor sit amet
+                                    tarancebe
+                                    consectetur
+                                    adipiscing elit turpis.</p>
+                                <button class="gradientButton hover:shadow-md rounded-full text-base"
+                                    aria-label="Liên hệ tư vấn dịch vụ">
+                                    <span>Đăng ký nhận ưu đãi</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide relative pb-1">
+                            <div class="imageMySwiper"></div>
+                            <div class="contentOverlay  shadow-lg hover:shadow">
+                                <p class="font-medium text2rem font-Arima mb-2 textColor leading-8">Ưu đãi 50%
+                                </p>
+                                <p class="fontMduText22 textP1 leading-7">Gói khám thai tổng quát</p>
+                                <p class="text-base textContent mx-4 leading-normal">Lorem ipsum dolor sit amet
+                                    tarancebe
+                                    consectetur
+                                    adipiscing elit turpis.</p>
+                                <button class="gradientButton hover:shadow-md rounded-full text-base"
+                                    aria-label="Liên hệ tư vấn dịch vụ">
+                                    <span>Đăng ký nhận ưu đãi</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mx-auto flex lg:justify-between items-center lg:text-left text-center relative">
+            <div class="hidden lg:block basis-2/4 imgItem mr-8">
+                <img src="./public/img/imgDVTS.png" alt="imgDVTS">
+            </div>
+            <div class="lg:basis-2/4 flex flex-col items-center lg:items-start">
+                <p class="font-medium text4xl mb-4 leading-44">Dịch vụ thai sản trọn gói
+                </p>
+                <p class="textContent mb-4 leading-normal">Mang thai và sinh nở là một hành trình vô
+                    cùng
+                    kỳ diệu nhưng cũng lắm mệt mỏi, áp lực, thậm chí
+                    là nguy hiểm. Thấu hiểu nỗi niềm đó, dịch vụ thai sản trọn gói Phương Đông nhằm mang tới trải
+                    nghiệm nhẹ nhàng, an tâm cho người mẹ trong suốt thai kỳ, ngày vượt cạn đến sau sinh và sự chăm
+                    sóc toàn diện với em bé ngay từ giây phút đầu tiên chào đời.</p>
 
-        </section>
-        <section class="my-[5.5rem] relative">
-            <div class="container mx-auto flex flex-col justify-center">
-                <div class="flex flex-col xl:flex-row justify-center xl:justify-between items-center mb-10">
-                    <p class="font-medium text-4xl mb-6 xl:mb-0 lineHeight2 text-center">
-                        Đội ngũ bác sĩ bệnh viện đa khoa Phương Đông
+                <div class="grid gap-4">
+                    <div class="benefit-item">
+                        <div class="flex flex-col gap-2 leading-normal">
+                            <p class="flex items-center justify-center lg:justify-start">
+                                <span class="textGradient mr-3 text-xs">●</span>
+                                <span class="font-medium">Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</span>
+                            </p>
+                            <p class="flex items-center justify-center lg:justify-start ml-4">
+                                <span class="textGradient mr-3 text-xs">●</span>
+                                <span class="font-medium">Chăm sóc mẹ và bé toàn diện trước trong và sau sinh</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="flex flex-col gap-2 leading-normal">
+                            <p class="flex items-center justify-center lg:justify-start">
+                                <span class="textGradient mr-3 text-xs">●</span>
+                                <span class="font-medium">Không gian đẳng cấp với trang thiết bị y tế hiện
+                                    đại</span>
+                            </p>
+                            <p class="flex items-center justify-center lg:justify-start ml-4">
+                                <span class="textGradient mr-3 text-xs">●</span>
+                                <span class="font-medium">Đi sinh sung sướng như đi nghỉ dưỡng</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="flex flex-col gap-2 leading-normal">
+                            <p class="flex items-center justify-center lg:justify-start">
+                                <span class="textGradient mr-3 text-xs">●</span>
+                                <span class="font-medium">Con yêu chào đời với những điều kiện tốt nhất</span>
+                            </p>
+                            <p class="flex items-center justify-center lg:justify-start ml-4">
+                                <span class="textGradient mr-3 text-xs">●</span>
+                                <span class="font-medium">Thanh toán đồng thời bảo hiểm Y tế, bảo hiểm bảo
+                                    lãnh</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="flex flex-col gap-2 leading-normal">
+                            <p class="flex items-center justify-center lg:justify-start">
+                                <span class="textGradient mr-3 text-xs">●</span>
+                                <span class="font-medium">Bảng giá các gói sinh tại Bệnh viện Phương Đông</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="px-8 py-13 btnCss3 mt-10" aria-label="Liên hệ tư vấn dịch vụ">
+                    Liên hệ
+                </button>
+            </div>
+            <div class="hidden lg:block absolute -left-[20%] -bottom-96 -z-10">
+                <img src="./public/img/Circle2.png" alt="Circle2">
+            </div>
+        </div>
+    </section>
+    <section class="bgSectionTable mt-88 py-20 relative overflow-visible">
+        <div class="container mx-auto flex flex-col justify-center items-center bg-white px-6 pt-8">
+            <div class="w-full px-4">
+                <div class="flex flex-col md:flex-row items-center py-4 mt10 ">
+                    <a href="./index.html">
+                        <img src="./public/img/Logoheader.png" alt="Logoheader">
+                    </a>
+                    <div class="flex-1 text-center">
+                        <p class="font-medium text4xl mb mt-5 md:mt-0 leading-44">Bảng giá các dịch vụ
+                            khám và chữa
+                            bệnh:</p>
+                        <p class="textContent leading-normal mt-01">Ghi chú: Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit lis
+                            iaculis ac felis</p>
+                    </div>
+                </div>
+                <div class="rounded-lg overflow-hidden overflow-x-auto mb-8">
+                    <table
+                        class="min-w-full border border-gray-200 bg-white [&_td]:border [&_th]:border [&_tr]:border ">
+                        <thead class="bg-gradient-to-r from-green50C to-blu02DB font-medium">
+                            <tr>
+                                <th rowspan="2" class="py-2 px-4 text-white uppercase text-center">
+                                    STT</th>
+                                <th rowspan="2" class="py-2 px-4 text-white uppercase text-center">
+                                    Tên dịch vụ</th>
+                                <th colspan="2" class="py-2 px-4  text-white uppercase text-center">
+                                    Giá dịch vụ cho khách hàng có quốc tịch</th>
+                            </tr>
+                            <tr>
+                                <th class="py-2 px-4 text-white text-center">Việt Nam</th>
+                                <th class="py-2 px-4 text-white text-center">Nước ngoài
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="textContent ">
+                            <tr class="border-t border-gray-200">
+                                <td class="py-3 px-4 text-center">1</td>
+                                <td class="py-3 px-4">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td>
+                                <td class="py-3 px-4 text-center">200,000/giờ</td>
+                                <td class="py-3 px-4 text-center">400,000/giờ</td>
+                            </tr>
+                            <tr class="border-t border-gray-200 ">
+                                <td class="py-3 px-4 text-center">2</td>
+                                <td class="py-3 px-4">Cắt chỉ</td>
+                                <td class="py-3 px-4 text-center">300,000/lần</td>
+                                <td class="py-3 px-4 text-center">300,000/lần</td>
+                            </tr>
+                            <tr class="border-t border-gray-200">
+                                <td class="py-3 px-4 text-center">3</td>
+                                <td class="py-3 px-4">Phương tiện bảo hộ lấy mẫu</td>
+                                <td class="py-3 px-4 text-center">300,000/lần</td>
+                                <td class="py-3 px-4 text-center">300,000/lần</td>
+                            </tr>
+                            <tr class="border-t border-gray-200 ">
+                                <td class="py-3 px-4 text-center">4</td>
+                                <td class="py-3 px-4">Tắm bé tại nhà</td>
+                                <td class="py-3 px-4 text-center">300,000/lần</td>
+                                <td class="py-3 px-4 text-center">300,000/lần</td>
+                            </tr>
+                            <tr class="border-t border-gray-200 ">
+                                <td class="py-3 px-4 text-center">5</td>
+                                <td class="py-3 px-4">Dẫn lưu nước tiểu bàng quang</td>
+                                <td class="py-3 px-4 text-center">300,000/lần</td>
+                                <td class="py-3 px-4 text-center">300,000/lần</td>
+                            </tr>
+                            <tr class="border-t border-gray-200 ">
+                                <td class="py-3 px-4 text-center">6</td>
+                                <td class="py-3 px-4">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td>
+                                <td class="py-3 px-4 text-center">200,000/lần</td>
+                                <td class="py-3 px-4 text-center">400,000/lần</td>
+                            </tr>
+                            <tr class="border-t border-gray-200 ">
+                                <td class="py-3 px-4 text-center">7</td>
+                                <td class="py-3 px-4">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td>
+                                <td class="py-3 px-4 text-center">200,000/lần</td>
+                                <td class="py-3 px-4 text-center">400,000/lần</td>
+                            </tr>
+                            <tr class="border-t border-gray-200 ">
+                                <td class="py-3 px-4 text-center">8</td>
+                                <td class="py-3 px-4">Xét nghiệm tại nhà</td>
+                                <td colspan="2" class="py-3 px-4 text-center">Theo giá niêm yết
+                                    tại BVDK Phương Đông</td>
+                            </tr>
+                            <tr class="border-t border-gray-200 ">
+                                <td class="py-3 px-4 text-center">9</td>
+                                <td class="py-3 px-4">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td>
+                                <td class="py-3 px-4 text-center">200,000/lần</td>
+                                <td class="py-3 px-4 text-center">400,000/lần</td>
+                            </tr>
+                            <tr class="border-t border-gray-200 ">
+                                <td class="py-3 px-4 text-center">10</td>
+                                <td class="py-3 px-4">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td>
+                                <td class="py-3 px-4 text-center">200,000/lần</td>
+                                <td class="py-3 px-4 text-center">400,000/lần</td>
+                            </tr>
+                            <tr class="border-t border-gray-200 ">
+                                <td class="py-3 px-4 text-center">11</td>
+                                <td class="py-3 px-4">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</td>
+                                <td class="py-3 px-4 text-center">200,000/lần</td>
+                                <td class="py-3 px-4 text-center">400,000/lần</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto bgSectionFooterTable flex flex-col md:flex-row justify-evenly  items-center py-2">
+            <a href="tel:19001806">
+                <div class="textFooterTable">
+                    <i class="fa-solid fa-phone-volume mr-2"></i>
+                    <p>Hotline: 1900 1806</p>
+                </div>
+            </a>
+            <a href="https://benhvienphuongdong.vn/">
+                <div class="textFooterTable">
+                    <i class="fa-solid fa-globe mr-2"></i>
+                    <p>https://benhvienphuongdong.vn/</p>
+                </div>
+            </a>
+        </div>
+        <div class="hidden lg:block absolute right-0 -bottom-52 -z-10">
+            <img src="./public/img/Circle3.png" alt="Circle3">
+        </div>
+    </section>
+    <section class="mt-4 xl:mt-88 grid xl:grid-cols-12 relative">
+        <div class="col-start-1 col-span-10 h-[583px] relative">
+            <div class="bgSectionImg"></div>
+            <div class="bgSectionText p-14">
+                <p class="font-medium text4xl mb-4 leading-44">Bệnh viên Phương Đông tiên phong
+                    trong dịch vụ thai sản trọn gói</p>
+                <p class="font-normal  text-white xl:text-black00 xl:text-opacity-65 leading-normal">
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Suspendisse tale tincidunt tortor
+                    lobortis pretium nulla quis sem nullam rhoncus. Ornare et dui sit massa. Volutpat porta leo
+                    pulvinar adipiscing gestas metus </p>
+                <button class="px-8 py-13 btnCss2 mt-10" aria-label="Liên hệ tư vấn dịch vụ">
+                    Đăng ký tư vấn
+                </button>
+            </div>
+        </div>
+        <div class="hidden lg:block absolute left-[40%] top-60">
+            <img src="./public/img/Circle4.png" alt="Circle4">
+        </div>
+    </section>
+    <section class="mt-0 lg:mt-56">
+        <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center py-10">
+            <p class="font-medium text4xl text-center mb-4 lg:mb-0 leading-44">Hình ảnh về
+                cơ sở vật chất, trang thiết bị</p>
+            <div class="flex gap-4">
+                <button class="docterPrev1 btnDocter" aria-label="Bấm chuyển silde">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="docterNext1 btnDocter" aria-label="Bấm chuyển silde">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="swiper gridSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./public/img/Robot1.png" alt="Robot">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/img/Robot2.png" alt="Robot">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/img/Robot3.png" alt="Robot">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/img/Robot4.png" alt="Robot">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/img/Robot5.png" alt="Robot">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/img/Robot6.png" alt="Robot">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/img/Robot1.png" alt="Robot">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/img/Robot1.png" alt="Robot">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/img/Robot1.png" alt="Robot">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="my-88 relative">
+        <div class="container mx-auto flex flex-col justify-center">
+            <div class="flex flex-col xl:flex-row justify-center xl:justify-between items-center mb-10">
+                <p class="font-medium text4xl mb-6 xl:mb-0 leading-44 text-center">
+                    Đội ngũ bác sĩ bệnh viện đa khoa Phương Đông
+                </p>
+                <button class="py-10 pl-4 pr-6 btnCss2" aria-label="Thông tin bác sĩ">
+                    <i class="fa-regular fa-user mr-2"></i>
+                    Tìm bác sĩ
+                </button>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div class="product-item flex justify-center xl:justify-start items-center ">
+                    <div class="basis-1/2 mr-4">
+                        <img src="./public/img/BSNTC.png" alt="BSNTC">
+                    </div>
+                    <div class="basis-1/2 space-y-2">
+                        <p class="fontMduText22 uppercase leading-7">BS: NGUYỄN TRUNG CHÍNH</p>
+                        <p class="text-gray88 leading-4 lg:leading-5">PGS.TS. Bác sĩ Ung bướu - Giám đốc
+                            Bệnh viện Đa khoa Phương Đông</p>
+                        <p class="font-normal textContent2 leading-normal">Kinh nghiệm: <span
+                                class="font-bold textContent2">20 năm </span></p>
+                        <div class="flex items-center ">
+                            <p class="font-normal pt-1 mr-2 textContent2 leading-normal">Xếp hạng:</p>
+                            <div class="rating-select">
+                                <div class="rating">
+                                    <input class="star star-5" rules="required" id="star-rate-5" type="radio" value="5"
+                                        name="rate">
+                                    <label class="star star-5" for="star-rate-5"></label>
+                                    <input class="star star-4" rules="required" id="star-rate-4" type="radio" value="4"
+                                        name="rate">
+                                    <label class="star star-4" for="star-rate-4"></label>
+                                    <input class="star star-3" rules="required" id="star-rate-3" type="radio" value="3"
+                                        name="rate">
+                                    <label class="star star-3" for="star-rate-3"></label>
+                                    <input class="star star-2" rules="required" id="star-rate-2" type="radio" value="2"
+                                        name="rate">
+                                    <label class="star star-2" for="star-rate-2"></label>
+                                    <input class="star star-1" rules="required" id="star-rate-1" type="radio" value="1"
+                                        name="rate">
+                                    <label class="star star-1" for="star-rate-1"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item flex justify-center xl:justify-start items-center ">
+                    <div class="basis-1/2 mr-4">
+                        <img src="./public/img/BSNHB.png" alt="BSNHB">
+                    </div>
+                    <div class="basis-1/2 space-y-2">
+                        <p class="fontMduText22 uppercase leading-7">BS: NGUYỄN TRUNG CHÍNH</p>
+                        <p class="text-gray88 leading-4 lg:leading-5">PGS.TS. Bác sĩ Ung bướu - Giám đốc
+                            Bệnh viện Đa khoa Phương Đông</p>
+                        <p class="font-normal textContent2 leading-normal">Kinh nghiệm: <span
+                                class="font-bold textContent2">20 năm </span></p>
+                        <div class="flex items-center ">
+                            <p class="font-normal pt-1 mr-2 textContent2 leading-normal">Xếp hạng:</p>
+                            <div class="rating-select">
+                                <div class="rating">
+                                    <input class="star star-5" rules="required" id="star-rate-5-2" type="radio"
+                                        value="5" name="rate2">
+                                    <label class="star star-5" for="star-rate-5-2"></label>
+                                    <input class="star star-4" rules="required" id="star-rate-4-2" type="radio"
+                                        value="4" name="rate2">
+                                    <label class="star star-4" for="star-rate-4-2"></label>
+                                    <input class="star star-3" rules="required" id="star-rate-3-2" type="radio"
+                                        value="3" name="rate2">
+                                    <label class="star star-3" for="star-rate-3-2"></label>
+                                    <input class="star star-2" rules="required" id="star-rate-2-2" type="radio"
+                                        value="2" name="rate2">
+                                    <label class="star star-2" for="star-rate-2-2"></label>
+                                    <input class="star star-1" rules="required" id="star-rate-1-2" type="radio"
+                                        value="1" name="rate2">
+                                    <label class="star star-1" for="star-rate-1-2"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item flex lg:flex-row-reverse justify-center xl:justify-start items-center ">
+                    <div class="basis-1/2 mr-4 lg:ml-4">
+                        <img src="./public/img/BSTKT.png" alt="BSTKT">
+                    </div>
+                    <div class="basis-1/2 space-y-2">
+                        <p class="fontMduText22 uppercase leading-7">BS: NGUYỄN TRUNG CHÍNH</p>
+                        <p class="text-gray88 leading-4 lg:leading-5">PGS.TS. Bác sĩ Ung bướu - Giám đốc
+                            Bệnh viện Đa khoa Phương Đông</p>
+                        <p class="font-normal textContent2 leading-normal">Kinh nghiệm: <span
+                                class="font-bold textContent2">20 năm </span></p>
+                        <div class="flex items-center ">
+                            <p class="font-normal pt-1 mr-2 textContent2 leading-normal">Xếp hạng:</p>
+                            <div class="rating-select">
+                                <div class="rating">
+                                    <input class="star star-5" rules="required" id="star-rate-5-3" type="radio"
+                                        value="5" name="rate3">
+                                    <label class="star star-5" for="star-rate-5-3"></label>
+                                    <input class="star star-4" rules="required" id="star-rate-4-3" type="radio"
+                                        value="4" name="rate3">
+                                    <label class="star star-4" for="star-rate-4-3"></label>
+                                    <input class="star star-3" rules="required" id="star-rate-3-3" type="radio"
+                                        value="3" name="rate3">
+                                    <label class="star star-3" for="star-rate-3-3"></label>
+                                    <input class="star star-2" rules="required" id="star-rate-2-3" type="radio"
+                                        value="2" name="rate3">
+                                    <label class="star star-2" for="star-rate-2-3"></label>
+                                    <input class="star star-1" rules="required" id="star-rate-1-3" type="radio"
+                                        value="1" name="rate3">
+                                    <label class="star star-1" for="star-rate-1-3"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item flex lg:flex-row-reverse justify-center xl:justify-start items-center ">
+                    <div class="basis-1/2 mr-4 lg:ml-4">
+                        <img src="./public/img/BSNTKY.png" alt="BSNTKY">
+                    </div>
+                    <div class="basis-1/2 space-y-2">
+                        <p class="fontMduText22 uppercase leading-7">BS: NGUYỄN TRUNG CHÍNH</p>
+                        <p class="text-gray88 leading-4 lg:leading-5">PGS.TS. Bác sĩ Ung bướu - Giám đốc
+                            Bệnh viện Đa khoa Phương Đông</p>
+                        <p class="font-normal textContent2 leading-normal">Kinh nghiệm: <span
+                                class="font-bold textContent2">20 năm </span></p>
+                        <div class="flex items-center">
+                            <p class="font-normal pt-1 mr-2 textContent2 leading-normal">Xếp hạng:</p>
+                            <div class="rating-select">
+                                <div class="rating">
+                                    <input class="star star-5" rules="required" id="star-rate-5-4" type="radio"
+                                        value="5" name="rate4">
+                                    <label class="star star-5" for="star-rate-5-4"></label>
+                                    <input class="star star-4" rules="required" id="star-rate-4-4" type="radio"
+                                        value="4" name="rate4">
+                                    <label class="star star-4" for="star-rate-4-4"></label>
+                                    <input class="star star-3" rules="required" id="star-rate-3-4" type="radio"
+                                        value="3" name="rate4">
+                                    <label class="star star-3" for="star-rate-3-4"></label>
+                                    <input class="star star-2" rules="required" id="star-rate-2-4" type="radio"
+                                        value="2" name="rate4">
+                                    <label class="star star-2" for="star-rate-2-4"></label>
+                                    <input class="star star-1" rules="required" id="star-rate-1-4" type="radio"
+                                        value="1" name="rate4">
+                                    <label class="star star-1" for="star-rate-1-4"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:block absolute -top-[28%] -left-3 -z-10">
+            <img src="./public/img/Circle6.png" alt="Circle6">
+        </div>
+    </section>
+    <section class="relative">
+        <div class="container mx-auto ">
+            <div class="textImageContent">
+                <div
+                    class="hidden lg:block  h-[300px] md:h-[400px] lg:h-[460px] overflow-hidden rounded-tl-[80px] rounded-tr-[80px] rounded-bl-[80px]">
+                    <div class="imgContainer h-full">
+                        <img src="./public/img/embe1.png" alt="embe1">
+                    </div>
+                </div>
+                <div class=" lg:pl-10">
+                    <p class="font-medium text-2xl md:text-3xl lg:text4xl mb-4 lg:mb-5 leading-44">
+                        Chuyển dạ và sinh non có nguy hiểm?
                     </p>
-                    <button class="py-[0.625rem] pl-4 pr-6 btnCss2">
-                        <i class="fa-regular fa-user mr-2"></i>
-                        Tìm bác sĩ
-                    </button>
-                </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                    <div class="product-item flex justify-center xl:justify-start items-center ">
-                        <div class="basis-1/2 mr-4">
-                            <img src="./public/img/BSNTC.png" alt="BSNTC">
-                        </div>
-                        <div class="basis-1/2 space-y-2">
-                            <p class="fontMduText22 uppercase lineHeight3">BS: NGUYỄN TRUNG CHÍNH</p>
-                            <p class="text-[#888888] lineHeight4">PGS.TS. Bác sĩ Ung bướu - Giám đốc
-                                Bệnh viện Đa khoa Phương Đông</p>
-                            <p class="font-normal textContent2 lineHeight">Kinh nghiệm: <span class="font-bold textContent2">20 năm </span></p>
-                            <div class="flex items-center lineHeight">
-                                <p class="font-normal pt-0 xl:pt-1 mr-2 textContent2">Xếp hạng:</p>
-                                <div class="rating-select">
-                                    <div class="rating">
-                                        <input class="star star-5" rules="required" id="star-rate-5" type="radio"
-                                            value="5" name="rate">
-                                        <label class="star star-5" for="star-rate-5"></label>
-                                        <input class="star star-4" rules="required" id="star-rate-4" type="radio"
-                                            value="4" name="rate">
-                                        <label class="star star-4" for="star-rate-4"></label>
-                                        <input class="star star-3" rules="required" id="star-rate-3" type="radio"
-                                            value="3" name="rate">
-                                        <label class="star star-3" for="star-rate-3"></label>
-                                        <input class="star star-2" rules="required" id="star-rate-2" type="radio"
-                                            value="2" name="rate">
-                                        <label class="star star-2" for="star-rate-2"></label>
-                                        <input class="star star-1" rules="required" id="star-rate-1" type="radio"
-                                            value="1" name="rate">
-                                        <label class="star star-1" for="star-rate-1"></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item flex justify-center xl:justify-start items-center ">
-                        <div class="basis-1/2 mr-4">
-                            <img src="./public/img/BSNHB.png" alt="BSNHB">
-                        </div>
-                        <div class="basis-1/2 space-y-2">
-                            <p class="fontMduText22 uppercase lineHeight3">BS: NGUYỄN TRUNG CHÍNH</p>
-                            <p class="text-[#888888] lineHeight4">PGS.TS. Bác sĩ Ung bướu - Giám đốc
-                                Bệnh viện Đa khoa Phương Đông</p>
-                            <p class="font-normal textContent2 lineHeight">Kinh nghiệm: <span class="font-bold textContent2">20 năm </span></p>
-                            <div class="flex items-center lineHeight">
-                                <p class="font-normal pt-0 xl:pt-1 mr-2 textContent2">Xếp hạng:</p>
-                                <div class="rating-select">
-                                    <div class="rating">
-                                        <input class="star star-5" rules="required" id="star-rate-5-2" type="radio"
-                                            value="5" name="rate2">
-                                        <label class="star star-5" for="star-rate-5-2"></label>
-                                        <input class="star star-4" rules="required" id="star-rate-4-2" type="radio"
-                                            value="4" name="rate2">
-                                        <label class="star star-4" for="star-rate-4-2"></label>
-                                        <input class="star star-3" rules="required" id="star-rate-3-2" type="radio"
-                                            value="3" name="rate2">
-                                        <label class="star star-3" for="star-rate-3-2"></label>
-                                        <input class="star star-2" rules="required" id="star-rate-2-2" type="radio"
-                                            value="2" name="rate2">
-                                        <label class="star star-2" for="star-rate-2-2"></label>
-                                        <input class="star star-1" rules="required" id="star-rate-1-2" type="radio"
-                                            value="1" name="rate2">
-                                        <label class="star star-1" for="star-rate-1-2"></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item flex flex-row-reverse justify-center xl:justify-start items-center ">
-                        <div class="basis-1/2 ml-4">
-                            <img src="./public/img/BSTKT.png" alt="BSTKT">
-                        </div>
-                        <div class="basis-1/2 space-y-2">
-                            <p class="fontMduText22 uppercase lineHeight3">BS: NGUYỄN TRUNG CHÍNH</p>
-                            <p class="text-[#888888] lineHeight4">PGS.TS. Bác sĩ Ung bướu - Giám đốc
-                                Bệnh viện Đa khoa Phương Đông</p>
-                            <p class="font-normal textContent2 lineHeight">Kinh nghiệm: <span class="font-bold textContent2">20 năm </span></p>
-                            <div class="flex items-center lineHeight">
-                                <p class="font-normal pt-0 xl:pt-1 mr-2 textContent2">Xếp hạng:</p>
-                                <div class="rating-select">
-                                    <div class="rating">
-                                        <input class="star star-5" rules="required" id="star-rate-5-3" type="radio"
-                                            value="5" name="rate3">
-                                        <label class="star star-5" for="star-rate-5-3"></label>
-                                        <input class="star star-4" rules="required" id="star-rate-4-3" type="radio"
-                                            value="4" name="rate3">
-                                        <label class="star star-4" for="star-rate-4-3"></label>
-                                        <input class="star star-3" rules="required" id="star-rate-3-3" type="radio"
-                                            value="3" name="rate3">
-                                        <label class="star star-3" for="star-rate-3-3"></label>
-                                        <input class="star star-2" rules="required" id="star-rate-2-3" type="radio"
-                                            value="2" name="rate3">
-                                        <label class="star star-2" for="star-rate-2-3"></label>
-                                        <input class="star star-1" rules="required" id="star-rate-1-3" type="radio"
-                                            value="1" name="rate3">
-                                        <label class="star star-1" for="star-rate-1-3"></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item flex flex-row-reverse justify-center xl:justify-start items-center ">
-                        <div class="basis-1/2 ml-4">
-                            <img src="./public/img/BSNTKY.png" alt="BSNTKY">
-                        </div>
-                        <div class="basis-1/2 space-y-2">
-                            <p class="fontMduText22 uppercase lineHeight3">BS: NGUYỄN TRUNG CHÍNH</p>
-                            <p class="text-[#888888] lineHeight4">PGS.TS. Bác sĩ Ung bướu - Giám đốc
-                                Bệnh viện Đa khoa Phương Đông</p>
-                            <p class="font-normal textContent2 lineHeight">Kinh nghiệm: <span class="font-bold textContent2">20 năm </span></p>
-                            <div class="flex items-center">
-                                <p class="font-normal pt-0 xl:pt-1 mr-2 textContent2">Xếp hạng:</p>
-                                <div class="rating-select">
-                                    <div class="rating">
-                                        <input class="star star-5" rules="required" id="star-rate-5-4" type="radio"
-                                            value="5" name="rate4">
-                                        <label class="star star-5" for="star-rate-5-4"></label>
-                                        <input class="star star-4" rules="required" id="star-rate-4-4" type="radio"
-                                            value="4" name="rate4">
-                                        <label class="star star-4" for="star-rate-4-4"></label>
-                                        <input class="star star-3" rules="required" id="star-rate-3-4" type="radio"
-                                            value="3" name="rate4">
-                                        <label class="star star-3" for="star-rate-3-4"></label>
-                                        <input class="star star-2" rules="required" id="star-rate-2-4" type="radio"
-                                            value="2" name="rate4">
-                                        <label class="star star-2" for="star-rate-2-4"></label>
-                                        <input class="star star-1" rules="required" id="star-rate-1-4" type="radio"
-                                            value="1" name="rate4">
-                                        <label class="star star-1" for="star-rate-1-4"></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hidden lg:block absolute -top-[25%] -left-[5%] -z-10">
-                <img src="./public/img/Circle6.png" alt="Circle6">
-            </div>
-        </section>
-        <section class="relative">
-            <div class="container mx-auto px-4 md:px-6 lg:px-8">
-                <div class="textImageContent">
-                    <div
-                        class="hidden lg:block  h-[300px] md:h-[400px] lg:h-[460px] overflow-hidden rounded-tl-[80px] rounded-tr-[80px] rounded-bl-[80px]">
-                        <div class="img-container h-full">
-                            <img src="./public/img/embe1.png" alt="embe1">
-                        </div>
-                    </div>
-                    <div class=" lg:pl-10">
-                        <p class="font-medium text-2xl md:text-3xl lg:text-4xl mb-4 lg:mb-5 lineHeight2">
-                            Chuyển dạ và sinh non có nguy hiểm?
-                        </p>
 
-                        <div class="space-y-4 md:space-y-6 lineHeight">
-                            <div>
-                                <p class="fontMedium">Tính nguy hiểm của bệnh</p>
-                                <p class="text-sm md:text-base lg:text-xs xl:text-base text-[#454545]">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris,
-                                    turpis fringilla condimentum urna sagittis estellus etiam nisl pretium
-                                </p>
-                            </div>
-
-                            <div>
-                                <p class="fontMedium">Các cấp độ</p>
-                                <p class="text-sm md:text-base lg:text-xs xl:text-base text-[#454545]">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris,
-                                    turpis fringilla condimentum urna sagittis est. Id tortor odio posuere a cursus
-                                    netus massa. Tellus etiam nisl pretium feugiat nulla. Pulvinar nisl et suspendisse
-                                    velit ornare sed dolor, convallis dolor. Et, dignissim amet sed orci at amet id
-                                    nulla mauris.
-                                </p>
-                            </div>
-
-                            <div>
-                                <p class="fontMedium">Giải pháp</p>
-                                <p class="text-sm md:text-base lg:text-xs xl:text-base text-[#454545]">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris,
-                                    turpis fringilla condimentum urna sagittis est.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="textImageContent mt-5 lg:mt-0">
-                    <div class=" lg:pr-10">
-                        <p class="font-medium text-xl md:text-2xl lg:text-[2rem] mb-4 lineHeight2">
-                            Dấu hiệu nhận biết chuyển dạ và sinh non:
-                        </p>
-
-                        <div class="space-y-4 md:space-y-6 lineHeight">
-                            <p class="text-sm md:text-base lg:text-xs xl:text-base text-[#454545] ">
+                    <div class="space-y-4 md:space-y-6 leading-normal">
+                        <div>
+                            <p class="fontMedium">Tính nguy hiểm của bệnh</p>
+                            <p class="text-sm md:text-base lg:text-xs xl:text-base text-back45">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris,
                                 turpis fringilla condimentum urna sagittis estellus etiam nisl pretium
                             </p>
+                        </div>
 
-                            <p class="text-sm md:text-base lg:text-xs xl:text-base text-[#454545] ">
+                        <div>
+                            <p class="fontMedium">Các cấp độ</p>
+                            <p class="text-sm md:text-base lg:text-xs xl:text-base text-back45">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris,
-                                turpis fringilla condimentum urna sagittis est. Id tortor odio posuere a cursus netus
-                                massa. Tellus etiam nisl pretium feugiat nulla. Pulvinar nisl et suspendisse velit
-                                ornare sed dolor, convallis dolor. Et, dignissim amet sed orci at amet id nulla mauris.
-                            </p>
-
-                            <p class="text-sm md:text-base lg:text-xs xl:text-base text-[#454545] ">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, odio in turpis nunc
-                                mollis diam viverra dictum. Tortor sed sapien ut tellus. Nunc etiam consectetur
-                                consectetur amet taranlete pellentesque varius vel donec. Malesuada morbi nisl cras
-                                turpis pretium. Habitant facilisis malesuada suscipit mus
+                                turpis fringilla condimentum urna sagittis est. Id tortor odio posuere a cursus
+                                netus massa. Tellus etiam nisl pretium feugiat nulla. Pulvinar nisl et suspendisse
+                                velit ornare sed dolor, convallis dolor. Et, dignissim amet sed orci at amet id
+                                nulla mauris.
                             </p>
                         </div>
-                    </div>
 
-                    <div
-                        class="hidden lg:block h-[300px] md:h-[400px] lg:h-[460px] overflow-hidden rounded-br-[80px] rounded-tr-[80px] rounded-bl-[80px]">
-                        <div class="img-container h-full">
-                            <img src="./public/img/embe2.png" alt="embe2">
+                        <div>
+                            <p class="fontMedium">Giải pháp</p>
+                            <p class="text-sm md:text-base lg:text-xs xl:text-base text-back45">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris,
+                                turpis fringilla condimentum urna sagittis est.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="textImageContent mt-5 lg:mt-0">
+                <div class=" lg:pr-10">
+                    <p class="font-medium text-xl md:text-2xl lg:text-32 mb-4 leading-44">
+                        Dấu hiệu nhận biết chuyển dạ và sinh non:
+                    </p>
 
-            <div class="hidden lg:block absolute top-1/2">
-                <img src="./public/img/Circle7.png" alt="Circle7">
-            </div>
-            <div class="hidden lg:block absolute -top-1/3 right-0 -z-10">
-                <img src="./public/img/Circle5.png" alt="Circle5">
-            </div>
-        </section>
-        <section class="section-video my-6 2xl:my-[20rem]">
-            <div class="container mx-auto relative">
-                <div class="grid grid-cols-12 items-center relative z-10">
-                    <div class="col-span-12 lg:col-start-1 lg:col-span-6 p-4 lg:mr-8">
-                        <iframe class="w-full h-96 rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px] lg:aspect-video"
-                            src="https://www.youtube.com/embed/qfD3g43V2FE?autoplay=1&mute=1" title="Đen Vâu Best Hits"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="col-span-12 lg:col-start-7 lg:col-span-6  text-center lg:text-left">
-                        <h2 class="font-medium text-4xl py-6 lineHeight2">
-                            Giải pháp an toàn hãy lựa chọn dịch vụ thai sản trọn gói tại bệnh viện Phương Đông
-                        </h2>
-                        <p class="textContent mb-10 lineHeight">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut risus luctus donec Lorem
-                            malesuada scelerisque euismod ullamcorper ac lacus aliquet quisque. Pulvinar aenean fusce
-                            pulvinar elementum odio dolor lorem aenean quis. Ridiculus mattis.
+                    <div class="space-y-4 md:space-y-6 leading-normal">
+                        <p class="text-sm md:text-base lg:text-xs xl:text-base text-back45 ">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris,
+                            turpis fringilla condimentum urna sagittis estellus etiam nisl pretium
                         </p>
-                        <button class="px-8 py-[0.8125rem] btnCss2">
-                            <i class="fa-solid fa-phone-volume mr-2"></i>
-                            Liên hệ ngay
+
+                        <p class="text-sm md:text-base lg:text-xs xl:text-base text-back45 ">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris,
+                            turpis fringilla condimentum urna sagittis est. Id tortor odio posuere a cursus netus
+                            massa. Tellus etiam nisl pretium feugiat nulla. Pulvinar nisl et suspendisse velit
+                            ornare sed dolor, convallis dolor. Et, dignissim amet sed orci at amet id nulla mauris.
+                        </p>
+
+                        <p class="text-sm md:text-base lg:text-xs xl:text-base text-back45 ">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, odio in turpis nunc
+                            mollis diam viverra dictum. Tortor sed sapien ut tellus. Nunc etiam consectetur
+                            consectetur amet taranlete pellentesque varius vel donec. Malesuada morbi nisl cras
+                            turpis pretium. Habitant facilisis malesuada suscipit mus
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="hidden lg:block h-[300px] md:h-[400px] lg:h-[460px] overflow-hidden rounded-br-[80px] rounded-tr-[80px] rounded-bl-[80px]">
+                    <div class="imgContainer h-full">
+                        <img src="./public/img/embe2.png" alt="embe2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden lg:block absolute top-1/2">
+            <img src="./public/img/Circle7.png" alt="Circle7">
+        </div>
+        <div class="hidden lg:block absolute -top-1/3 right-0 -z-10">
+            <img src="./public/img/Circle5.png" alt="Circle5">
+        </div>
+    </section>
+    <section class="section-video my-6 2xl:my-224">
+        <div class="container mx-auto relative">
+            <div class="grid grid-cols-12 items-center relative z-10">
+                <div class="col-span-12 lg:col-start-1 lg:col-span-6 mr-0 lg:mr-4 relative">
+                    <div
+                        class="video-container w-full h-96 rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px] lg:aspect-video relative">
+                        <img src="./public/img/imgYTB.jpg" alt="Video thumbnail"
+                            class="w-full h-full object-cover rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px]">
+                        <button
+                            class="play-btn absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 py-3 px-6 bg-redFF0 rounded-2xl"
+                            onclick="loadVideo()">
+                            <i class="fa-solid fa-play text-2xl text-white hover:text-gray-200"></i>
                         </button>
                     </div>
                 </div>
-                <div
-                    class="hidden 2xl:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                    <img src="./public/img/Circle8.png" alt="Circle8">
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container mx-auto grid grid-cols-12 items-center">
-                <div
-                    class="col-span-12 lg:col-start-1 lg:col-span-6 mr-0 lg:mr-8   text-center lg:text-start">
-                    <p class="font-medium text-4xl mb-6 lineHeight2">Tại sao bạn nên chọn gói dịch vụ thai sản tại bệnh viện
-                        Phương Đông</p>
-                    <p class="fontMedium lineHeight">Khám định kỳ với Bác sĩ sản khoa.</p>
-                    <p class="textContent mb-4 lineHeight">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Consequat risus </p>
-                    <p class="fontMedium lineHeight">Chăm sóc thai kỳ cùng bác sĩ Sản khoa hàng đầuKhám định kỳ với
-                        Bác sĩ sản khoa.</p>
-                    <p class="textContent mb-4 lineHeight">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Consequat risus </p>
-                    <p class="fontMedium lineHeight">Ekip đón bé chuyên môn cao, có khả năng xử lý nhiều ca khó</p>
-                    <p class="textContent mb-4 lineHeight">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Consequat risus </p>
-                    <p class="fontMedium lineHeight">Chăm lo cho mẹ và bé chu đáo - Cả nhà nhàn tênh</p>
-                    <p class="textContent lineHeight">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Consequat risus </p>
-                    <button class=" btnCss2 mt-10">
+                <div class="col-span-12 lg:col-start-7 lg:col-span-6  text-center lg:text-left ml-0 lg:ml-4">
+                    <h2 class="font-medium text4xl py-6 leading-44">
+                        Giải pháp an toàn hãy lựa chọn dịch vụ thai sản trọn gói tại bệnh viện Phương Đông
+                    </h2>
+                    <p class="textContent mb-10 leading-normal">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut risus luctus donec Lorem
+                        malesuada scelerisque euismod ullamcorper ac lacus aliquet quisque. Pulvinar aenean fusce
+                        pulvinar elementum odio dolor lorem aenean quis. Ridiculus mattis.
+                    </p>
+                    <button class="px-8 py-13 btnCss2" aria-label="Liên hệ tư vấn dịch vụ">
                         <i class="fa-solid fa-phone-volume mr-2"></i>
                         Liên hệ ngay
                     </button>
                 </div>
-                <div class="hidden lg:block col-span-12 lg:col-start-7 lg:col-span-6">
-                    <img src="./public/img/groupCircle5.png" alt="groupCircle5">
+            </div>
+            <div
+                class="hidden 2xl:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                <img src="./public/img/Circle8.png" alt="Circle8">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mx-auto grid grid-cols-12 items-center">
+            <div class="col-span-12 lg:col-start-1 lg:col-span-6 mr-0 lg:mr-8   text-center lg:text-start">
+                <p class="font-medium text4xl mb-6 leading-44">Tại sao bạn nên chọn gói dịch vụ thai sản tại
+                    bệnh
+                    viện
+                    Phương Đông</p>
+                <p class="fontMedium leading-normal">Khám định kỳ với Bác sĩ sản khoa.</p>
+                <p class="textContent mb-4 leading-normal">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Consequat risus </p>
+                <p class="fontMedium leading-normal">Chăm sóc thai kỳ cùng bác sĩ Sản khoa hàng đầuKhám định kỳ với
+                    Bác sĩ sản khoa.</p>
+                <p class="textContent mb-4 leading-normal">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Consequat risus </p>
+                <p class="fontMedium leading-normal">Ekip đón bé chuyên môn cao, có khả năng xử lý nhiều ca khó</p>
+                <p class="textContent mb-4 leading-normal">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Consequat risus </p>
+                <p class="fontMedium leading-normal">Chăm lo cho mẹ và bé chu đáo - Cả nhà nhàn tênh</p>
+                <p class="textContent leading-normal">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Consequat risus </p>
+                <button class=" btnCss2 mt-10" aria-label="Liên hệ tư vấn dịch vụ">
+                    <i class="fa-solid fa-phone-volume mr-2"></i>
+                    Liên hệ ngay
+                </button>
+            </div>
+            <div class="hidden lg:block col-span-12 lg:col-start-7 lg:col-span-6">
+                <img src="./public/img/groupCircle5.png" alt="groupCircle5">
+            </div>
+        </div>
+    </section>
+    <section class="my-6 md:my-88">
+        <div class="container mx-auto flex flex-col justify-center items-center">
+            <div class="lg:w-[70%] text-center mb-10">
+                <p class="font-medium text4xl mb-4 leading-44">Hậu quả chuyển dạ và sinh non nếu không điều trị
+                    kịp thời
+                </p>
+                <p class="textContent leading-normal w-[90%] mx-auto">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Amet, odio in turpis nunc mollis diam
+                    viverra dictum. Tortor sed sapien ut tellus. Nunc etiam consectetur consectetur amet Habitant
+                    facilisis malesuada suscipit mus</p>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-12 gap-8 leading-normal">
+                <div class="lg:col-start-1 colItem">
+                    <div class="flexItem mb-0 lg:mb-6">
+                        <img src="./public/img/Item.png" alt="Item">
+                    </div>
+                    <div class="relative flex items-center">
+                        <span class="contentItem">Gây sảy thai</span>
+                        <div class="itemCrilce">
+                        </div>
+                    </div>
+                    <p class="textContent">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis </p>
+                </div>
+                <div class="lg:col-start-7 colItem">
+                    <div class="flexItem mb-0 lg:mb-6">
+                        <img src="./public/img/Item1.png" alt="Item">
+                    </div>
+                    <div class="relative flex items-center">
+                        <span class="contentItem">Nguy hiểm cho cả hai mẹ con</span>
+                        <div class="itemCrilce">
+                        </div>
+                    </div>
+                    <p class="textContent">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis </p>
+                </div>
+                <div class="lg:col-start-4 colItem">
+                    <div class="flexItem mb-0 lg:mb-6">
+                        <img src="./public/img/Item2.png" alt="Item">
+                    </div>
+                    <div class="relative flex items-center">
+                        <span class="contentItem">Sinh sản gặp khó khăn</span>
+                        <div class="itemCrilce">
+                        </div>
+                    </div>
+                    <p class="textContent">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis </p>
+                </div>
+                <div class="lg:col-start-10 colItem">
+                    <div class="flexItem mb-0 lg:mb-6">
+                        <img src="./public/img/Item3.png" alt="Item">
+                    </div>
+                    <div class="relative flex items-center">
+                        <span class="contentItem">Gây mất khả năng sinh sản</span>
+                        <div class="itemCrilce">
+                        </div>
+                    </div>
+                    <p class="textContent">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis </p>
                 </div>
             </div>
-        </section>
-        <section class="my-6 md:my-[5.5rem]">
-            <div class="container mx-auto flex flex-col justify-center items-center">
-                <div class="w-[65%] text-center mb-10">
-                    <p class="font-medium text-4xl mb-4 lineHeight2">Hậu quả chuyển dạ và sinh non nếu không điều trị kịp thời
-                    </p>
-                    <p class="textContent lineHeight">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Amet, odio in turpis nunc mollis diam
-                        viverra dictum. Tortor sed sapien ut tellus. Nunc etiam consectetur consectetur amet Habitant
-                        facilisis malesuada suscipit mus</p>
-                </div>
-                <div class="grid grid-cols-2 lg:grid-cols-12 gap-8 lineHeight">
-                    <div class="lg:col-start-1 colItem">
-                        <div class="flexItem mb-0 lg:mb-6">
-                            <img src="./public/img/Item.png" class="" alt="Item">
-                        </div>
-                        <div class="relative flex items-center">
-                            <span class="contentItem">Gây sảy thai</span>
-                            <div
-                                class="itemCrilce">
-                            </div>
-                        </div>
-                        <p class="textContent">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis </p>
-                    </div>
-                    <div class="lg:col-start-7 colItem">
-                        <div class="flexItem mb-0 lg:mb-6">
-                            <img src="./public/img/Item1.png" class="" alt="Item">
-                        </div>
-                        <div class="relative flex items-center">
-                            <span class="contentItem">Nguy hiểm cho cả hai mẹ con</span>
-                            <div
-                                class="itemCrilce">
-                            </div>
-                        </div>
-                        <p class="textContent">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis </p>
-                    </div>
-                    <div class="lg:col-start-4 colItem">
-                        <div class="flexItem mb-0 lg:mb-6">
-                            <img src="./public/img/Item2.png" class="" alt="Item">
-                        </div>
-                        <div class="relative flex items-center">
-                            <span class="contentItem">Sinh sản gặp khó khăn</span>
-                            <div
-                                class="itemCrilce">
-                            </div>
-                        </div>
-                        <p class="textContent">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis </p>
-                    </div>
-                    <div class="lg:col-start-10 colItem">
-                        <div class="flexItem mb-0 lg:mb-6">
-                            <img src="./public/img/Item3.png" class="" alt="Item">
-                        </div>
-                        <div class="relative flex items-center">
-                            <span class="contentItem">Gây mất khả năng sinh sản</span>
-                            <div
-                                class="itemCrilce">
-                            </div>
-                        </div>
-                        <p class="textContent">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis </p>
-                    </div>
-                </div>
 
+        </div>
+    </section>
+    <section>
+        <div class="hidden md:block -mb-5">
+            <img src="./public/img/layoutFooter.png" alt="layoutFooter">
+        </div>
+        <footer class="bgFooter">
+            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8 text-white py-8">
+                <div class="leading-normal">
+                    <a href="./index.html">
+                        <img src="./public/img/Logo 2.png" class="mb-6" alt="Logo 2"></a>
+                    <p class="font-medium text-18 uppercase">Bệnh viên đa khoa phương đông</p>
+                    <p class="font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna sit morbi
+                        nisl contale consectetur
+                        pellentesque ullamcorper con viverra id cursus hendreritenim ultricies</p>
+                </div>
+                <div class=" mt-5">
+                    <p class="font-medium text-2xl mb-6 leading-8">Thông tin liên hệ</p>
+                    <p class="font-normal">Địa chỉ: <span class="font-semibold leading-normal">Số 9, Phố Viên, Cổ Nhuế
+                            2, Bắc Từ Liêm, Hà Nội</span></p>
+                    <a href="mailto:bvphuongdong@phuongdonghospital.vn" class="font-normal leading-normal">Email:
+                        <span class="hoverFooter1 font-semibold">bvphuongdong@phuongdonghospital.vn</span></a>
+                    <a href="mailto:info.benhvienphuongdong@gmail.com"
+                        class="hover:text-orangeFFB transition-all duration-300 font-semibold leading-normal">info.benhvienphuongdong@gmail.com</a>
+
+                    <a href="tel:19001806">
+                        <p class="font-normal leading-normal">Tổng đài
+                            tư vấn: <span class="font-semibold hoverFooter1">19001806</span></p>
+                    </a>
+                </div>
+                <div class="mt-5">
+                    <p class="font-medium text-2xl mb-6 leading-8">Giờ làm việc</p>
+                    <p class="font-normal leading-normal">Từ 7:00 - 19:00 từ Thứ 2 đến CN</p>
+                    <a href="tel:0833015115">
+                        <p class="hoverFooter leading-normal">Cấp cứu
+                            24/7: 0833 015 115</p>
+                    </a>
+                    <a href="tel:0911615115">
+                        <p class="hoverFooter leading-normal">Hotline
+                            Tiêm chủng: 0911 615 115</p>
+                    </a>
+                    <a href="tel:19001806">
+                        <p class="hoverFooter leading-normal">Hotline
+                            Hỗ trợ khách hàng: 1900 1806</p>
+                    </a>
+                </div>
+                <div class="mt-5">
+                    <p class="font-medium text-2xl mb-6 leading-8">Theo dõi chúng tôi</p>
+                    <div class="mb-6">
+                        <a href="https://www.facebook.com/benhviendakhoaphuongdong?mibextid=LQQJ4d">
+                            <i class="fa-brands fa-facebook p-2 rounded-full border-2 mr-6 hoverFooter"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@benhviendakhoaphuongdong">
+                            <i class="fa-brands fa-youtube p-2 rounded-full border-2 mr-6 hoverFooter"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@benhviendakhoaphuongdong?_t=8rPV3GILXBY&_r=1">
+                            <i class="fa-brands fa-tiktok p-2 rounded-full border-2 hoverFooter"></i>
+                        </a>
+                    </div>
+                    <img src="./public/img/chungnhan.png" alt="chungnhan">
+                </div>
             </div>
-        </section>
-        <section class="">
-            <div class="hidden md:block -mb-5">
-                <img src="./public/img/layoutFooter.png" alt="layoutFooter">
+            <div>
+                <div class="h-[1px] w-full bg-white mt-10 mb-4"></div>
             </div>
-            <footer class="bgFooter">
-                <div
-                    class="container mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8 text-white py-8">
-                    <div class="lineHeight">
-                        <a href="./index.html">
-                            <img src="./public/img/Logo 2.png" class="mb-6" alt="Logo 2"></a>
-                        <p class="font-medium text-[1.125rem] uppercase">Bệnh viên đa khoa phương đông</p>
-                        <p class="font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna sit morbi
-                            nisl contale consectetur
-                            pellentesque ullamcorper con viverra id cursus hendreritenim ultricies</p>
-                    </div>
-                    <div class=" mt-5">
-                        <p class="font-medium text-2xl mb-6 lineHeight1">Thông tin liên hệ</p>
-                        <p class="font-normal">Địa chỉ: <span class="font-semibold lineHeight">Số 9, Phố Viên, Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội</span></p>
-                        <a href="mailto:bvphuongdong@phuongdonghospital.vn" class="hoverFooter lineHeight">Email:
-                           <span class="font-semibold">bvphuongdong@phuongdonghospital.vn</span></a>
-                        <a href="mailto:info.benhvienphuongdong@gmail.com"
-                            class="hover:text-[#0084CC] transition-all duration-300 font-semibold lineHeight">info.benhvienphuongdong@gmail.com</a>
+            <div class="container mx-auto flex justify-center items-center text-white py-6">
+                <p class="font-normal leading-normal">© Copyright 2022 Bệnh Viện Đa khoa Phương Đông. All Rights
+                    Reserved.
+                </p>
+            </div>
 
-                        <a href="tel:19001806">
-                            <p class="hoverFooter lineHeight">Tổng đài
-                                tư vấn: <span class="font-semibold">19001806</span></p>
-                        </a>
-                    </div>
-                    <div class= "mt-5">
-                        <p class="font-medium text-2xl mb-6 lineHeight1">Giờ làm việc</p>
-                        <p class="font-normal lineHeight">Từ 7:00 - 19:00 từ Thứ 2 đến CN</p>
-                        <a href="tel:0833015115">
-                            <p class="hoverFooter lineHeight">Cấp cứu
-                                24/7: 0833 015 115</p>
-                        </a>
-                        <a href="tel:0911615115">
-                            <p class="hoverFooter lineHeight">Hotline
-                                Tiêm chủng: 0911 615 115</p>
-                        </a>
-                        <a href="tel:19001806">
-                            <p class="hoverFooter lineHeight">Hotline
-                                Hỗ trợ khách hàng: 1900 1806</p>
-                        </a>
-                    </div>
-                    <div class="mt-5">
-                        <p class="font-medium text-2xl mb-6 lineHeight1">Theo dõi chúng tôi</p>
-                        <div class="mb-6">
-                            <a href="https://www.facebook.com/benhviendakhoaphuongdong?mibextid=LQQJ4d">
-                                <i class="fa-brands fa-facebook p-2 rounded-full border-2 mr-6 hoverFooter"></i>
-                            </a>
-                            <a href="https://www.youtube.com/@benhviendakhoaphuongdong">
-                                <i class="fa-brands fa-youtube p-2 rounded-full border-2 mr-6 hoverFooter"></i>
-                            </a>
-                            <a href="https://www.tiktok.com/@benhviendakhoaphuongdong?_t=8rPV3GILXBY&_r=1">
-                                <i class="fa-brands fa-tiktok p-2 rounded-full border-2 hoverFooter"></i>
-                            </a>
-                        </div>
-                        <img src="./public/img/chungnhan.png" alt="chungnhan">
-                    </div>
-                </div>
-                <div class="">
-                    <div class="h-[1px] w-full bg-white mt-10 mb-4"></div>
-                </div>
-                <div class="container mx-auto flex justify-center items-center text-white py-6">
-                    <p class="font-normal">© Copyright 2022 Bệnh Viện Đa khoa Phương Đông. All Rights Reserved.</p>
-                </div>
-
-            </footer>
-        </section>
-    </div>
+        </footer>
+    </section>
     <script src="./public/main.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>

@@ -3,44 +3,56 @@
 @tailwind utilities;
 
 .btnCss {
-    @apply font-semibold text-white rounded-full bg-gradient-to-b from-[#FFB469] to-[#E57709] shadow-sm hover:shadow-[#FFB469] hover:shadow-md transition-all duration-300;
+    @apply font-semibold text-white rounded-full bg-gradient-to-b from-orangeFFB to-orangeE57 shadow-sm hover:shadow-orangeFFB hover:shadow-md transition-all duration-300;
 }
 .btnCss2 {
-    @apply font-semibold bg-gradient-to-b from-[#FFB469] to-[#E57709] text-[#FFFFFF] shadow-md shadow-[#FFB469] hover:shadow-xl transition-all duration-300 rounded-full px-8 py-[0.8125rem];
+    @apply font-semibold bg-gradient-to-b from-orangeFFB to-orangeE57 text-white shadow-lg shadow-orangef8e hover:shadow-xl transition-all duration-300 rounded-full px-8 py-13;
+}
+.btnCss3 {
+    @apply font-semibold bg-gradient-to-b from-orangeFFB to-orangeE57 text-white shadow-xl shadow-orangef8e hover:shadow-xl transition-all duration-300 rounded-full px-8 py-13;
 }
 
 .btnDocter{
-    @apply w-10 h-10 shadow-md shadow-[#FFB469] bg-gradient-to-b from-[#FFB469] to-[#E57709] text-[#FFFFFF] hover:shadow rounded-full text-base md:text-[1.625rem] transition-all duration-300 ease-in-out;
+    @apply w-10 h-10 shadow-lg shadow-orangef8e bg-gradient-to-b from-orangeFFB to-orangeE57 text-white hover:shadow rounded-full text-base md:text-26 transition-all duration-300 ease-in-out;
 }
 
 .textContent{
-    @apply text-[#000000] text-opacity-65 font-normal;
+    @apply text-black00 text-opacity-65 font-normal;
 }
 .textContent2{
-    @apply text-[#000000] text-opacity-65;
+    @apply text-black00 text-opacity-65;
 }
 
-.lineHeight{
-    @apply  leading-tight lg:leading-normal;
+.bannerSwiper .swiper-slide {
+    @apply h-[350px] sm:h-[450px] md:h-[500px] lg:h-[550px] xl:h-[600px] 2xl:h-[650px];
+    border-radius: 0;
 }
-.lineHeight1{
-    @apply  leading-8;
+
+
+@layer utilities {
+    .text-shadow {
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    .text-shadow-sm {
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+    .text-shadow-md {
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+    }
+    .text-shadow-lg {
+      text-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+    }
 }
-.lineHeight2{
-    @apply  leading-[2.75rem];
-}
-.lineHeight3{
-    @apply  leading-7;
-}
-.lineHeight4{
-    @apply  leading-5;
-}
+
 .textFooterTable{
     @apply flex items-center font-semibold text-sm text-white;
 }
 
 .hoverFooter{
-    @apply hover:text-[#0084CC] transition-all duration-300 font-normal;
+    @apply hover:text-orangeFFB transition-all duration-300 font-normal;
+}
+.hoverFooter1{
+    @apply hover:text-orangeFFB transition-all duration-300;
 }
 .colItem{
     @apply col-span-1 lg:col-span-3 text-left;
@@ -52,15 +64,22 @@
     @apply font-medium text-[1.5rem] mb-0 lg:mb-2;
 }
 .textImageContent{
-    @apply w-full 2xl:w-[95%] grid grid-cols-1 lg:grid-cols-2  items-center mx-auto;
+    @apply  grid grid-cols-1 lg:grid-cols-2  items-center mx-auto;
 }
 .fontMedium{
     @apply font-medium text-lg mb-2;
 }
 .fontMduText22{
-    @apply font-medium text-[1.375rem];
+    @apply font-medium text-18 lg:text-22;
 }
 
 .itemCrilce{
-    @apply hidden md:block absolute -top-1 left-6 w-6 h-6 -translate-x-8 rounded-full bg-gradient-to-r from-[#50C577] text-[#C4EACE] to-[#B5E8FD] -z-10;
+    @apply hidden md:block absolute -top-1 left-6 w-6 h-6 -translate-x-8 rounded-full bg-gradient-to-r from-green50C text-greenC4E to-bluB5E -z-10;
+}
+
+.text4xl{
+    @apply text-2xl lg:text-4xl;
+}
+.text2rem{
+    @apply text-28 lg:text-32;
 }

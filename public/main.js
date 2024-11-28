@@ -14,9 +14,26 @@ if (dropMenu && clickMenu) {
     });
 }
 
+var bannerSwiper = new Swiper(".bannerSwiper", {
+    slidesPerView: 1,
+    grabCursor: true,
+    allowTouchMove: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    speed: 800,
+
+});
+
 var mySwiper = new Swiper(".mySwiper", {
     slidesPerView: 3.45,
-    spaceBetween: 20,
+    spaceBetween: 24,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -51,10 +68,10 @@ var mySwiper = new Swiper(".mySwiper", {
             slidesPerView: 0.8,
         }
     }
-    
+
 });
 var gridSwiper = new Swiper(".gridSwiper", {
-    slidesPerView: 5.8,
+    slidesPerView: 5.9,
     spaceBetween: 20,
     pagination: {
         el: ".swiper-pagination",
@@ -66,7 +83,7 @@ var gridSwiper = new Swiper(".gridSwiper", {
     },
     breakpoints: {
         1536: {
-            slidesPerView: 5.8,
+            slidesPerView: 5.9,
         },
         1280: {
             slidesPerView: 4.3,
@@ -74,12 +91,26 @@ var gridSwiper = new Swiper(".gridSwiper", {
         1024: {
             slidesPerView: 3.5,
         },
-        768:{
+        768: {
             slidesPerView: 2.8,
         },
         320: {
             slidesPerView: 1.5,
         },
     },
-    
+
 });
+
+
+function loadVideo() {
+    const videoContainer = document.querySelector('.video-container');
+    const iframe = document.createElement('iframe');
+
+    iframe.src = "https://www.youtube.com/embed/qfD3g43V2FE?autoplay=1";
+    iframe.className = "w-full h-full rounded-tr-[40px] rounded-tl-[40px] rounded-br-[40px]";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+    iframe.allowFullscreen = true;
+
+    videoContainer.innerHTML = '';
+    videoContainer.appendChild(iframe);
+}
